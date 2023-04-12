@@ -1,1 +1,1 @@
-web: gunicorn risingwomen.wsgi
+web: gunicorn black-and-white-beauty.wsgi
