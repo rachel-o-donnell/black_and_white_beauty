@@ -1,1 +1,1 @@
-web: gunicorn black-and-white-beauty.wsgi
+web: gunicorn black_and_white_beauty.wsgi
