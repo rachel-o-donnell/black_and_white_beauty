@@ -13,15 +13,10 @@ header {
     color: #0E1D18;
 }
 
-/* from Bulma
-.icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
-} */
-
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
 
 .main-logo-link {
     width: fit-content;
@@ -56,6 +51,11 @@ button:focus,
     border: 1px solid black !important;
 }
 
+.banner {
+    background: #fff5ee;
+    color: #1f352f;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -77,5 +77,11 @@ button:focus,
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+@media (min-width: 480px) {
+    .logo {
+        font-size: 32px;
     }
 }

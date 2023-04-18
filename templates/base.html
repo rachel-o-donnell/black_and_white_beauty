@@ -42,42 +42,27 @@
 
 <body>
     <header class="container-fluid fixed-top">
-
+        <!-- banner -->
+        <div id="delivery-banner" class="row text-center">
+            <div class="col banner">
+                <h6 class="my-1 font-weight-lighter border">Free delivery on orders over
+                    €{{ free_shipping_threshold }}!
+                </h6>
+            </div>
+        </div>
         <!-- navbar -->
 
         <!-- logo -->
-        <div id="topnav" class="row pt-lg-2 d-none d-lg-flex mt-3 justify-content-center">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-start">
-                <a class="navbar-brand nav-link main-logo-link" href="{% url 'home' %}">
-                    <h2 class="my-auto nav-text-color my-0 font-weight-lighter">Black & White Beauty</h2>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <div class="container-fluid">
+            <div id="topnav" class="row pt-lg-2 mt-3 justify-content-center">
+                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-start">
+                    <a class="navbar-brand nav-link main-logo-link" href="{% url 'home' %}">
+                        <h2 class="logo my-auto nav-text-color my-0 font-weight-lighter">Black & White Beauty</h2>
+                    </a>
+                </div>
             </div>
         </div>
         <div id="topnav" class="row d-none d-lg-flex mb-2">
-
-            <!-- items and commissions -->
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <ul class="list-inline list-unstyled text-center text-lg-left my-0">
-                    <li class="list-inline-item dropdown">
-                        <a class="nav-text-color nav-link" href="#" id="user-options" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            <div class="text-center">
-                                <div class="nav-text font-weight-bold">Items</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-menu border-0 nav-text-color" aria-labelledby="categories">
-                            <a href="#" class="dropdown-item">test</a>
-                        </div>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" class="nav-text-color nav-link font-weight-bold">Commissions</a>
-                    </li>
-            </div>
 
             <!-- searchbar -->
             <div class=" col-12 col-lg-4 my-auto py-1 py-lg-0 text-center justify-content-center">
@@ -137,6 +122,18 @@
                 </ul>
             </div>
         </div>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {% include 'includes/mobile-top-header.html' %}
+                {% include 'includes/main-nav.html' %}
+
+            </nav>
+        </div>
+
 
     </header>
 
