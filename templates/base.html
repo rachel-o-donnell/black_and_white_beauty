@@ -57,7 +57,7 @@
             <div id="topnav" class="row pt-lg-2 mt-3 justify-content-center">
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-start">
                     <a class="navbar-brand nav-link main-logo-link" href="{% url 'home' %}">
-                        <h2 class="logo my-auto nav-text-color my-0 font-weight-lighter">Black & White Beauty</h2>
+                        <h2 class="logo my-auto nav-text-color my-0 font-weight-light">Black & White Beauty</h2>
                     </a>
                 </div>
             </div>
@@ -106,8 +106,7 @@
 
                     <!-- bag -->
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bolder{% else %}nav-text-color{% endif %} nav-link"
-                            href="">
+                        <a class="{% if grand_total %}text-info {% else %}nav-text-color{% endif %} nav-link" href="">
                             <div class="text-center">
                                 <div><i class="fas fa-cart-shopping fa-lg"></i></div>
                                 <p class="my-0">

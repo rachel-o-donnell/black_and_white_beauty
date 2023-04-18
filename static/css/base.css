@@ -8,14 +8,22 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: .5rem;
+    width: .5rem;
+}
+
 header {
     background-color: #A4C3B2;
     color: #0E1D18;
 }
 
 .logo {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 22px;
 }
 
 .main-logo-link {
@@ -78,7 +86,14 @@ button:focus,
     .header-container {
         padding-top: 164px;
     }
+
+    .icon {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
 }
+
 
 @media (min-width: 480px) {
     .logo {
