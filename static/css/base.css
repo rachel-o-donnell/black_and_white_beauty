@@ -85,6 +85,10 @@ button:focus,
     .container {
         max-width: 80%;
     }
+
+    .header-container {
+        padding-top: 200px;
+    }
 }
 
 /* fixed top navbar only on medium and up */
@@ -112,5 +116,16 @@ button:focus,
 @media (min-width: 480px) {
     .logo {
         font-size: 32px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }
