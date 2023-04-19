@@ -9,8 +9,11 @@
             </a>
             <div class="dropdown-menu border-0 nav-text-color" aria-labelledby="items-link">
                 <a href="{% url 'items' %}" class="dropdown-item">All Items</a>
-                <a href="" class="dropdown-item">Prints</a>
-                <a href="" class="dropdown-item">Originals</a>
+                <a href="{% url 'items' %}?category=prints" class="dropdown-item">Prints</a>
+                <a href="{% url 'items' %}?category=originals" class="dropdown-item">Originals</a>
+                <a href="{% url 'items' %}?category=butterflies" class="dropdown-item">Butterflies</a>
+                <a href="{% url 'items' %}?category=flora, fauna" class="dropdown-item">Flora &amp; Fauna</a>
+                <a href="{% url 'items' %}?category=fish" class="dropdown-item">Fish</a>
             </div>
         </li>
         <li class="nav-item">
