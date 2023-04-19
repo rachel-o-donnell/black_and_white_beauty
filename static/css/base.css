@@ -59,9 +59,23 @@ button:focus,
     border: 1px solid black !important;
 }
 
+.bg-custom {
+    background: #fff5ee;
+}
+
 .banner {
     background: #fff5ee;
     color: #1f352f;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #fff5ee;
+    z-index: -1;
 }
 
 /* -------------------------------- Media Queries */
