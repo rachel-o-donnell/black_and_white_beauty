@@ -9,6 +9,7 @@
             </a>
             <div class="dropdown-menu border-0 nav-text-color" aria-labelledby="items-link">
                 <a href="{% url 'items' %}" class="dropdown-item">All Items</a>
+                <a href="{% url 'items' %}?sort=price&direction=asc" class="dropdown-item">Sort by Price</a>
                 <a href="{% url 'items' %}?category=prints" class="dropdown-item">Prints</a>
                 <a href="{% url 'items' %}?category=originals" class="dropdown-item">Originals</a>
                 <a href="{% url 'items' %}?category=butterflies" class="dropdown-item">Butterflies</a>

@@ -21,6 +21,18 @@
     <div class="row">
         <div class="item-container col-10 offset-1">
             <div class="row mt-1 mb-2"></div>
+            <div class="col-12 my-auto order-md-last d-flex justify-content-center">
+                <div class="sort-select-wrapper w-60 mb-5">
+                    <select id="sort-selector" class="custom-select custom-select-sm border">
+                        <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
+                        </option>
+                        <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Low
+                            to high</option>
+                        <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>High to
+                            low</option>
+                    </select>
+                </div>
+            </div>
             <div class="row">
                 {% for item in items %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
@@ -73,4 +85,32 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+
+<!-- javascript for price selector -->
+<script type="text/javascript">
+    $('#sort-selector').change(function () {
+        var selector = $(this);
+        var currentUrl = new URL(window.location);
+
+        var selectedVal = selector.val();
+        if (selectedVal != "reset") {
+            var sort = selectedVal.split("_")[0];
+            var direction = selectedVal.split("_")[1];
+
+            currentUrl.searchParams.set("sort", sort);
+            currentUrl.searchParams.set("direction", direction);
+
+            window.location.replace(currentUrl);
+        } else {
+            currentUrl.searchParams.delete("sort");
+            currentUrl.searchParams.delete("direction");
+
+            window.location.replace(currentUrl);
+        }
+    })
+</script>
 {% endblock %}
