@@ -85,10 +85,22 @@
         </div>
     </div>
 </div>
+<div class="mt-5">
+    <a class="d-flex">
+        <button class="btn-custom mx-auto my-auto">Back to top</button>
+    </a>
+</div>
 {% endblock %}
 
 {% block postloadjs %}
 {{ block.super }}
+
+<!-- javascript for back to top button -->
+<script type="text/javascript">
+    $('.btn-custom').click(function (e) {
+        window.scrollTo(0, 0)
+    })
+</script>
 
 <!-- javascript for price selector -->
 <script type="text/javascript">
