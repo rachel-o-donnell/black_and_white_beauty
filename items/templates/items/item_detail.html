@@ -43,6 +43,33 @@
                 <p class="mt-3">Estimated dispatch date: {{ item.estimated_dispatch }} </p>
                 <p class="lead mb-0 text-left">${{ item.price }}</p>
 
+                <!-- add to cart -->
+
+                <form class="form" action="{% url 'add_to_cart' item.id %}" method="POST">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="col-12">
+                            <p class="mt-3">Quantity:</p>
+                            <div class="form-group w-50">
+                                <div class="input-group">
+                                    <input class="form-control qty_input" type="number" name="quantity" value="1"
+                                        min="1" max="99" data-item_id="{{ item.id }}" id="id_qty_{{ item.id }}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <a href="{% url 'items' %}" class="btn btn-custom mt-5">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span>Continue Shopping</span>
+                            </a>
+                            <input type="submit" class="btn btn-custom mt-5" value="Add to cart">
+                        </div>
+                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                    </div>
+                </form>
             </div>
         </div>
     </div>
