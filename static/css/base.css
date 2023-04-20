@@ -78,6 +78,11 @@ button:focus,
     z-index: -1;
 }
 
+.update-btn,
+.remove-btn {
+    cursor: pointer;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
