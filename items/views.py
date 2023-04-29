@@ -86,7 +86,7 @@ def add_item(request):
         if form.is_valid():
             item = form.save()
             messages.success(request, 'Item added to the store!')
-            return redirect(reverse('item_detail', args[item.id]))
+            return redirect(reverse('item_detail', args=[item.id]))
         else:
             messages.error(
                 request, 'Failed to add item. Please check your form is valid')
@@ -95,6 +95,7 @@ def add_item(request):
     template = 'items/add_item.html'
     context = {
         'form': form,
+        'on_add_item_page': True
     }
 
     return render(request, template, context)
@@ -125,6 +126,7 @@ def edit_item(request, item_id):
     context = {
         'form': form,
         'item': item,
+        'on_edit_item_page': True
     }
 
     return render(request, template, context)
