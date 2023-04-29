@@ -1,8 +1,10 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
-from .models import Item, Category
-
 from django.db.models import Q
+
+from .models import Item, Category
+from .forms import ItemForm
+
 
 # Create your views here.
 
@@ -42,7 +44,8 @@ def all_items(request):
                 messages.error(request, "You must enter a search word")
                 return redirect(reverse('items'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(
+                description__icontains=query)
             items = items.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -67,3 +70,24 @@ def item_detail(request, item_id):
     }
 
     return render(request, 'items/item_detail.html', context)
+
+
+def add_item(request):
+    """ Add a item to the store """
+    if request.method == 'POST':
+        form = ItemForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Item added to the store!')
+            return redirect(reverse('add_item'))
+        else:
+            messages.error(
+                request, 'Failed to add item. Please check your form is valid')
+    else:
+        form = ItemForm()
+    template = 'items/add_item.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
