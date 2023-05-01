@@ -1,0 +1,12 @@
+<h6>Cart Total: €{{ total|floatformat:2 }}</h6>
+<h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
+<h4 class="mt-4">Grand Total: €{{ grand_total|floatformat:2 }}</h4>
+{% if free_delivery_delta > 0 %}
+<p class="mb-1 text-danger">
+    Spend €{{ free_delivery_delta }} more to get free delivery.
+</p>
+{% else %}
+<p class="mb-1 text-info">
+    Your order qualifies for free delivery.
+</p>
+{% endif %}
