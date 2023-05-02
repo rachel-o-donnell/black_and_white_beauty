@@ -1,4 +1,5 @@
 from django.contrib import admin
+from .models import Commissions
 
 
 class CommissionsAdmin(admin.ModelAdmin):
@@ -10,3 +11,6 @@ class CommissionsAdmin(admin.ModelAdmin):
         'image',
         'brief'
     )
+
+
+admin.site.register(Commissions, CommissionsAdmin)
