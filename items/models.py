@@ -1,5 +1,9 @@
 from django.db import models
 
+# Create your models here.
+
+from django.db import models
+
 
 class Category(models.Model):
 
@@ -17,8 +21,7 @@ class Category(models.Model):
 
 
 class Item(models.Model):
-    category = models.ForeignKey(
-        'Category', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=254)
     description = models.TextField(max_length=1024)
     dimensions = models.CharField(max_length=250)
