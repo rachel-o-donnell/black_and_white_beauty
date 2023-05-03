@@ -1,0 +1,13 @@
+
+vscode:
+  extensions:
+    - formulahendry.auto-close-tag
+    - HookyQR.beautify
+    - eventyret.bootstrap-4-cdn-snippet
+    - matt-rudge.auto-open-preview-panel
+    - ms-toolsai.jupyter
+    - ms-toolsai.vscode-jupyter-cell-tags
+    - ms-toolsai.jupyter-keymap
+    - ms-toolsai.jupyter-renderers
+    - ms-python.python
+    - ms-toolsai.vscode-jupyter-slideshow
