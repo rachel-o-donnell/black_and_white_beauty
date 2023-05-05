@@ -67,10 +67,18 @@
     </div>
 </div>
 <div class="mt-5">
+    <a class="d-flex" href="{% url 'contact' %}">
+        <button class="btn btn-custom mt-5 mx-auto my-auto">Contact Us</button>
+    </a>
+   
+</div>
+<div class="mt-5">
     <a class="d-flex">
-        <button class="btn-custom mx-auto my-auto">Back to top</button>
+        <button class="btn btn-custom top-btn mx-auto my-auto">Back to top</button>
+       
     </a>
 </div>
+
 {% endblock %}
 
 {% block postloadjs %}
@@ -78,7 +86,7 @@
 
 <!-- javascript for back to top button -->
 <script type="text/javascript">
-    $('.btn-custom').click(function (e) {
+    $('.top-btn').click(function (e) {
         window.scrollTo(0, 0)
     })
 </script>
