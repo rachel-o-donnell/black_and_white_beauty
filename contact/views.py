@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
+from django.views.generic import ListView
 from .forms import ContactForm
+from .models import Contact
 
 
 def contact(request):
@@ -19,3 +21,9 @@ def contact(request):
         form = ContactForm()
 
     return render(request, 'contact/contact_form.html', {'form': form})
+
+
+class Enquiries(ListView):
+    """ This view is used to display all enquiries """
+    model = Contact
+    template_name = 'contact/enquiries.html'

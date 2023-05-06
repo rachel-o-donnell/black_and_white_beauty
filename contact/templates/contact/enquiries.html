@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extracss %}
+<link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="mb-4">Enquiries</h2>
+            <hr>
+        </div>
+    </div>
+    
+    <div class="past-orders table-responsive">
+    <table class="table table-sm table-borderless">
+        <thead>
+            <tr>
+                <th>Enquiry Number</th>
+                <th>Enquiry Date</th>
+                <th>From</th>
+                <th>Email</th>
+                <th>Subject</th>
+                <th>Message</th>
+                <th>Order Number</th>
+                <th>Dimensions</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for enquiry in contact_list  %}
+        <tr>
+          <th scope="row">{{ forloop.counter }}</th>
+          <td>{{ enquiry.date }}</td>
+          <td>
+            <a href="#">{{ enquiry.full_name }}</a>
+          </td>
+          <td>
+            <a href="#">{{ enquiry.email }}</a>
+          </td>
+          <td>
+            <a href="#">{{ enquiry.subject }}</a>
+          </td>
+          <!-- <td>
+            <a href="#">{{ enquiry.body}}</a>
+          </td> -->
+          <td class="d-none d-md-table-cell">
+            <a href="#">{{ enquiry.body|truncatechars:50}}</a>
+          </td>
+          <td>
+            <a href="#">{{ enquiry.order_number}}</a>
+          </td>
+          <td>
+            <a href="#">{{ enquiry.dimensions}}</a>
+          </td>
+          <td>
+            <a href="#">{{ enquiry.image}}</a>
+          </td>
+        </tr>
+        {% endfor %}
+            {% for enquiry in contact_list %}
+            <tr>
+                <td>
+                    <a href="#" title="{{ enquiry.full_name }}">
+                        {{ enquiry.full_name }}
+                    </a>
+                </td>
+                <td>{{ enquiry.date }}</td>
+                <td>
+                    <ul class="list-unstyled">
+                        {% for enquiry in enquiries.all %}
+                        <li class="small">
+                            {{ enquiry.full_name }} x {{ enquiries.date }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
