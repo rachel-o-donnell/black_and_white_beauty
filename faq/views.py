@@ -5,7 +5,7 @@ from . models import Faq
 def faq_view(request):
     """ FAQ's page view"""
 
-    faq = Faq.objects.all().filter.order_by('-date')
+    faq = Faq.objects.all().order_by('-date')
     context = {
         'faq': faq
     }
