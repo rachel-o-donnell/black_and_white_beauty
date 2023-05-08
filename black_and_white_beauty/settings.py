@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'commissions',
     'contact',
     'faq',
+    'reviews',
 
     # Other
     'crispy_forms',
