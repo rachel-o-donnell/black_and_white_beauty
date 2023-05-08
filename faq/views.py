@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from . models import Faq
@@ -20,7 +20,7 @@ def faq_view(request):
 @login_required
 def add_faq(request):
     """ Displays the form for admin to add a FAQ """
-    
+
     if not request.user.is_superuser:
         messages.error(request, 'Access is only authorised for store owners')
         return redirect(reverse('home'))
@@ -44,4 +44,34 @@ def add_faq(request):
         'form': form,
         'faqs': faqs,
     }
+    return render(request, template, context)
+
+
+@login_required
+def edit_faq(request, faq_id):
+    """ Lets admin edit a faq  """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Access is only authorised for store owners')
+        return redirect(reverse('home'))
+
+    faq = get_object_or_404(Faq, pk=faq_id)
+    if request.method == 'POST':
+        form = FaqForm(request.POST, request.FILES, instance=faq)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated faq!')
+            return redirect(reverse('faqs'))
+        else:
+            messages.error(
+                request, 'Something went wrong, Please ensure the form is valid.')
+    else:
+        form = FaqForm(instance=faq)
+
+    template = 'faq/edit_faq.html'
+    context = {
+        'form': form,
+        'faq': faq,
+    }
+
     return render(request, template, context)
