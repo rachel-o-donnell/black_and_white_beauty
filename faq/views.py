@@ -75,3 +75,18 @@ def edit_faq(request, faq_id):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def delete_faq(request, faq_id):
+    """ Delete a product in the store """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Access is only authorised for store owners')
+        return redirect(reverse('faqs'))
+
+    faq = get_object_or_404(Faq, pk=faq_id)
+    faq.delete()
+    messages.success(request, f'You successfully deleted {faq.question}')
+
+    return redirect(reverse('faqs'))

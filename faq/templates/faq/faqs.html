@@ -33,6 +33,9 @@
                   <small class="ml-3">
                       <a href="{% url 'edit_faq' qanda.id %}">Edit</a>
                   </small>
+                  <small class="ml-3">
+                    <a class="text-danger" href="{% url 'delete_faq' qanda.id %}">Delete</a>
+                </small>
                   {% endif %}
                 {% endfor %}
                 <div class="mt-5">
