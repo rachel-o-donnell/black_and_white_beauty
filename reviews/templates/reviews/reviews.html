@@ -23,7 +23,7 @@
         <div class="col-12 col-md-6 col-lg-4">
             <div class="item-details-container mb-5 mt-md-5">
                 <div>
-                    <h3 class="mb-0">{{ item.name }}</h3>
+                    <h3 class="mb-0">Reviews for {{ item.name }}</h3>
                     {% if item.category %}
                     <p class="small mt-1 mb-0">
                         <a class="text-muted" href="{% url 'items' %}?category={{ item.category.name }}">
@@ -32,34 +32,17 @@
                     </p>
                     {% endif %}
                 </div>
-                <p class="mt-3">{{ item.description }}</p>
-                <p class="mt-3">{{ item.dimensions }}</p>
-                {% if item.in_stock  %}
-                <p class="mt-3">In stock</p>
-                {% else %}
-                <p class="mt-3">Out of stock</p>
-                {% endif %}
-                <p class="mt-3">{{ item.how_many_in_stock }} remaining</p>
-                <p class="mt-3">Estimated dispatch date: {{ item.estimated_dispatch }} </p>
-                <p class="lead mb-0 text-left">${{ item.price }}</p>
+                <hr>
+                {% for review in reviews %}
+                 
+                <h3>"{{ review.title }}"</h3>
+                <p><small class="text-muted p-0"><em>Posted by {{ review.user }} on {{ review.date }}</em></small></p>
+                <p class="mt-3">"{{ review.body }}"</p>
+                {% if review.image %}       
+                <p class="mt-3">{{ review.image }}</p>       
+                {% endif %}            
 
-                <!-- Admin edit or delete and item  -->
-                {% if request.user.is_superuser %}
-                <small class="ml-3">
-                    <a href="{% url 'edit_item' item.id %}">Edit</a>
-                    <a class="text-danger" href="{% url 'delete_item' item.id %}">Delete</a>
-                </small>
-                {% endif %}
-
-                <!-- View reviews if there are any  -->
-                
-                <a href="{% url 'reviews' item.id %}" class="btn btn-custom mt-1">
-                    <span>Reviews of this item</span>
-                    <span class="icon">
-                        <i class="fas fa-chevron-right"></i>
-                    </span>
-                </a> 
-           
+                {% endfor %}
 
                 <!-- add to cart -->
                 <form class="form" action="{% url 'add_to_cart' item.id %}" method="POST">
@@ -105,9 +88,4 @@
         </div>
     </div>
 </div>
-{% endblock %}
-
-{% block postloadjs %}
-{{ block.super }}
-{% include 'items/includes/quantity_input_script.html' %}
 {% endblock %}
