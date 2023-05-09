@@ -15,6 +15,7 @@ class Review(models.Model):
                                    on_delete=models.CASCADE)
     title = models.CharField(max_length=30)
     body = models.TextField(max_length=500)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
     featured = models.BooleanField(default=False)
     date = models.DateField(auto_now_add=True, blank=False, null=False)
