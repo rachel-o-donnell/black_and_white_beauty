@@ -19,9 +19,8 @@ class ContactForm(forms.ModelForm):
         ]
 
     def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
         """
-        Add placeholders and classes, remove auto-generated
+        Add placeholders and remove auto-generated
         labels
         """
         super().__init__(*args, **kwargs)
