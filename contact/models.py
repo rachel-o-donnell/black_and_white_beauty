@@ -20,6 +20,7 @@ class Contact(models.Model):
     order_number = models.CharField(max_length=32, null=True, blank=True)
     body = models.TextField(max_length=1000, null=False, blank=False)
     dimensions = models.CharField(max_length=20, null=True, blank=True)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
