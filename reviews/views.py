@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from items.models import Item
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .models import Review
 from .forms import ReviewForm
 from profiles.models import UserProfile
@@ -59,3 +60,22 @@ def add_review(request, item_id):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def delete_review(request, review_id):
+    """
+    Admin can delete reviews
+    """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    review = get_object_or_404(Review, pk=review_id)
+
+    review.delete()
+
+    messages.success(
+        request, f'You deleted the review titled: "{ review.title }"')
+    return redirect(reverse('items'))
