@@ -44,16 +44,15 @@
         <tr>
           <th scope="row">{{ forloop.counter }}</th>
           <td>{{ enquiry.date }}</td>
-          <td>
-            <a href="#">{{ enquiry.full_name }}</a>
+          <td>{{ enquiry.full_name }}
           </td>
           <td>{{ enquiry.email }}
           </td>
-          <td>{{ enquiry.subject }}
+          <td>{{ enquiry.enquiry_subject }}
           </td>
-          <td class="d-none d-md-table-cell">{{ enquiry.body|truncatechars:50}}
+          <td>{{ enquiry.body}}
           </td>
-          <td>
+          <td> 
             <a href="#">{{ enquiry.order_number}}</a>
           </td>
           <td>{{ enquiry.dimensions }}

@@ -6,6 +6,7 @@ class Contact(models.Model):
     A model to allow site users to contact the site owner
     """
     CHOICES = (
+        (None, 'Pick a Subject'),
         ('Commissions', 'Commissions'),
         ('Complaint', 'Complaint'),
         ('Orders', 'Orders'),
