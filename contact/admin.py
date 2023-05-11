@@ -13,6 +13,7 @@ class ContactAdmin(admin.ModelAdmin):
         'order_number',
         'body',
         'dimensions',
+        'image_url',
         'image',
         'order_number',
         'date',

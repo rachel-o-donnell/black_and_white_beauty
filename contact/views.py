@@ -10,7 +10,7 @@ def contact(request):
     View for the contact form.
     """
     if request.method == 'POST':
-        form = ContactForm(request.POST)
+        form = ContactForm(request.POST, request.FILES)
         if form.is_valid():
             contact = form.save()
             messages.success(
@@ -25,5 +25,6 @@ def contact(request):
 
 class Enquiries(ListView):
     """ This view is used to display all enquiries """
+
     model = Contact
     template_name = 'contact/enquiries.html'

@@ -28,68 +28,49 @@
     <table class="table table-sm table-borderless">
         <thead>
             <tr>
-                <th>Enquiry Number</th>
-                <th>Enquiry Date</th>
+                <th>Enquiry #</th>
+                <th>Date</th>
                 <th>From</th>
                 <th>Email</th>
                 <th>Subject</th>
                 <th>Message</th>
-                <th>Order Number</th>
+                <th>Order #</th>
                 <th>Dimensions</th>
                 <th>Image</th>
             </tr>
         </thead>
         <tbody>
-            {% for enquiry in contact_list  %}
+        {% for enquiry in contact_list  %}
         <tr>
           <th scope="row">{{ forloop.counter }}</th>
           <td>{{ enquiry.date }}</td>
           <td>
             <a href="#">{{ enquiry.full_name }}</a>
           </td>
-          <td>
-            <a href="#">{{ enquiry.email }}</a>
+          <td>{{ enquiry.email }}
           </td>
-          <td>
-            <a href="#">{{ enquiry.subject }}</a>
+          <td>{{ enquiry.subject }}
           </td>
-          <!-- <td>
-            <a href="#">{{ enquiry.body}}</a>
-          </td> -->
-          <td class="d-none d-md-table-cell">
-            <a href="#">{{ enquiry.body|truncatechars:50}}</a>
+          <td class="d-none d-md-table-cell">{{ enquiry.body|truncatechars:50}}
           </td>
           <td>
             <a href="#">{{ enquiry.order_number}}</a>
           </td>
-          <td>
-            <a href="#">{{ enquiry.dimensions}}</a>
+          <td>{{ enquiry.dimensions }}
           </td>
           <td>
-            <a href="#">{{ enquiry.image}}</a>
+          {% if enquiry.image %}
+          <div class="image-container my-5">
+            <a href="{{ enquiry.image.url }}" target="_blank">
+                <img class="card-img-top img-fluid" src="{{ enquiry.image.url  }}" alt="{{ item.name }}">
+            </a>
+            {% else %}
+            <p>N/A</p>
+          </div>  
+            {% endif %}
           </td>
         </tr>
         {% endfor %}
-            {% for enquiry in contact_list %}
-            <tr>
-                <td>
-                    <a href="#" title="{{ enquiry.full_name }}">
-                        {{ enquiry.full_name }}
-                    </a>
-                </td>
-                <td>{{ enquiry.date }}</td>
-                <td>
-                    <ul class="list-unstyled">
-                        {% for enquiry in enquiries.all %}
-                        <li class="small">
-                            {{ enquiry.full_name }} x {{ enquiries.date }}
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </td>
-                <td></td>
-            </tr>
-            {% endfor %}
         </tbody>
     </table>
 </div>
