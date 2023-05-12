@@ -17,7 +17,8 @@ body {
     width: .5rem;
 }
 
-header {
+header,
+footer {
     background-color: #A4C3B2;
     color: #0E1D18;
 }
@@ -51,7 +52,8 @@ button:focus,
     color: #fff5ee;
 }
 
-.nav-text-color {
+.nav-text-color,
+.footer-text-color {
     color: #101211 !important;
 }
 

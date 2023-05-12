@@ -41,7 +41,7 @@
     <title>Black & White Beauty {% block extra_title %}{% endblock %}</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header class="container-fluid fixed-top">
         <!-- banner -->
         <div id="delivery-banner" class="row text-center">
@@ -164,11 +164,53 @@
     {% block content %}
     {% endblock %}
 
+      <!-- Footer -->
+      <footer class="text-center mt-auto">
+        <div class="container pt-3">
+            <!-- Social media -->
+            <div class="mb-4">
+                <a class="btn btn-link btn-floating btn-lg footer-text-color" href="https://www.facebook.com/" target="blank"
+                    role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-link btn-floating btn-lg footer-text-color" href="https://twitter.com/" target="blank"
+                    role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-link btn-floating btn-lg footer-text-color" href="https://www.instagram.com/" target="blank"
+                    role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-link btn-floating btn-lg footer-text-color"
+                    href="https://www.linkedin.com/in/rachel-o-donnell-397aa2180/" role="button" target="blank"
+                    data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                <a class="btn btn-link btn-floating btn-lg footer-text-color" href="https://github.com/rachel-o-donnell"
+                    target="blank" role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+                <hr>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col">
+                <div class="row">
+                    <ul class="navbar-nav">
+                    <li class="mt-5">
+                        <a class="d-flex footer-text-color" href="{% url 'contact' %}">Contact Us</a>
+                    </li>
+                    <li class="mt-5">
+                        <a class="d-flex footer-text-color" href="#">Sign up for our newsletter</a>
+                    </li>
+                    <li class="mt-5">
+                    <a class="d-flex footer-text-color" href="{% url 'faqs' %}">FAQ's</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="text-center footer-text-color p-2 pb-5">
+                © 2023 Copyright:
+                <a class="footer-text-color" href="{% url 'home' %}">Black & White Beauty</a>
+            </div>
+        </div>
+    </footer>
+
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
     {% endblock %}
+   
 </body>
-
 </html>
