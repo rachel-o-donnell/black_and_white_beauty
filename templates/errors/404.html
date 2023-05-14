@@ -1,11 +1,18 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block content %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
+
+{% block page_header %}
+<!-- Empty container for space -->
+<div class="container header-container mt-5 mb-5">
+    <div class="row">
+        <div class="col">
+            <h2 class="mb-4">Error</h2>
         </div>
     </div>
+</div>
+{% endblock %}
+
+{% block content %}
     <div class="container h-100">
         <div class="row h-100">
             <div class="col-7 col-md-6 my-auto">

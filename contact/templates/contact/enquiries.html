@@ -6,7 +6,8 @@
 {% endblock %}
 
 {% block page_header %}
-<div class="container header-container">
+<!-- Empty container for space -->
+<div class="container header-container mt-5 mb-5">
     <div class="row">
         <div class="col"></div>
     </div>
@@ -15,7 +16,7 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container">
+<div class="container mt-5">
     <div class="row">
         <div class="col">
             <hr>
@@ -25,52 +26,53 @@
     </div>
     
     <div class="past-orders table-responsive">
-    <table class="table table-sm table-borderless">
-        <thead>
+        <table class="table table-sm table-borderless">
+            <thead>
+                <tr>
+                    <th>Enquiry #</th>
+                    <th>Date</th>
+                    <th>From</th>
+                    <th>Email</th>
+                    <th>Subject</th>
+                    <th>Message</th>
+                    <th>Order #</th>
+                    <th>Dimensions</th>
+                    <th>Image</th>
+                </tr>
+         </thead>
+            <tbody>
+            {% for enquiry in contact_list  %}
             <tr>
-                <th>Enquiry #</th>
-                <th>Date</th>
-                <th>From</th>
-                <th>Email</th>
-                <th>Subject</th>
-                <th>Message</th>
-                <th>Order #</th>
-                <th>Dimensions</th>
-                <th>Image</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for enquiry in contact_list  %}
-        <tr>
-          <th scope="row">{{ forloop.counter }}</th>
-          <td>{{ enquiry.date }}</td>
-          <td>{{ enquiry.full_name }}
-          </td>
-          <td>{{ enquiry.email }}
-          </td>
-          <td>{{ enquiry.enquiry_subject }}
-          </td>
-          <td>{{ enquiry.body}}
-          </td>
-          <td> 
-            <a href="#">{{ enquiry.order_number}}</a>
-          </td>
-          <td>{{ enquiry.dimensions }}
-          </td>
-          <td>
-          {% if enquiry.image %}
-          <div class="image-container my-5">
-            <a href="{{ enquiry.image.url }}" target="_blank">
-                <img class="card-img-top img-fluid" src="{{ enquiry.image.url  }}" alt="{{ item.name }}">
-            </a>
+            <th scope="row">{{ forloop.counter }}</th>
+            <td>{{ enquiry.date }}</td>
+            <td>{{ enquiry.full_name }}
+            </td>
+            <td>{{ enquiry.email }}
+            </td>
+            <td>{{ enquiry.enquiry_subject }}
+            </td>
+            <td>{{ enquiry.body}}
+            </td>
+            <td> 
+             <a href="#">{{ enquiry.order_number}}</a>
+            </td>
+             <td>{{ enquiry.dimensions }}
+            </td>
+            <td>
+            {% if enquiry.image %}
+            <div class="image-container my-5">
+             <a href="{{ enquiry.image.url }}" target="_blank">
+                 <img class="card-img-top img-fluid" src="{{ enquiry.image.url  }}" alt="{{ item.name }}">
+              </a>
             {% else %}
-            <p>N/A</p>
-          </div>  
+             <p>N/A</p>
+            </div>  
             {% endif %}
-          </td>
-        </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+            </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </div>
 {% endblock %}
