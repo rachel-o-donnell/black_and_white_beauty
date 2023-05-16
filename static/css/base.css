@@ -98,6 +98,16 @@ button:focus,
     background: #fff5ee !important;
 }
 
+/* pop ups  */
+.modal-header,
+.modal-body  {
+    background: #fff5ee;
+}
+
+.modal-card  {
+    background:  #A4C3B2;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
