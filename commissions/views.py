@@ -1,29 +1,19 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.db.models.functions import Lower
 
 from .models import Commissions
 
 
 def all_commissions(request):
-    """ Shows all commissions, including search queries """
+    """ Shows all commissions """
 
     commissions = Commissions.objects.all()
-    query = None
-
-    if 'q' in request.GET:
-
-        query = request.GET['q']
-        if not query:
-            messages.error(request, "You must enter a search word")
-            return redirect(reverse('commissions'))
-
-        queries = Q(name__icontains=query) | Q(description__icontains=query)
-        commissions = commissions.filter(queries)
 
     context = {
         'commissions': commissions,
-        'search_term': query,
+
     }
 
     return render(request, 'commissions/commissions.html', context)
