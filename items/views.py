@@ -8,9 +8,6 @@ from .models import Item, Category
 from .forms import ItemForm
 
 
-# Create your views here.
-
-
 def all_items(request):
     """ Shows all items, including sorting and search queries """
 
@@ -95,7 +92,6 @@ def add_item(request):
     template = 'items/add_item.html'
     context = {
         'form': form,
-        'on_add_item_page': True
     }
 
     return render(request, template, context)
@@ -126,7 +122,6 @@ def edit_item(request, item_id):
     context = {
         'form': form,
         'item': item,
-        'on_edit_item_page': True
     }
 
     return render(request, template, context)
