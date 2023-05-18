@@ -1,60 +1,63 @@
 <!-- searchbar -->
-<li class="list-inline-item">
+<ul>
+  <li class="list-inline-item">
     <a class="nav-text-color nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        <div class="text-center">
-            <div><i class="fas fa-search fa-lg"></i></div>
-        </div>
+      aria-haspopup="true" aria-expanded="false">
+      <div class="text-center">
+        <div><i class="fas fa-search fa-lg"></i></div>
+      </div>
     </a>
     <div class="dropdown-menu border-0 w-100 p-3" aria-labelledby="mobile-search">
-        <form class="form" method="GET" action="{% url 'items' %}">
-            <div class="input-group w-70">
-                <input class="form-control border" type="text" name="q" placeholder="Search the gallery">
-                <div class="input-group-append">
-                    <button class="form-control btn" type="submit">
-                        <span class="icon">
-                            <i class="fas fa-search"></i>
-                        </span>
-                    </button>
-                </div>
-            </div>
-        </form>
-    </div>
-</li>
-<!-- account -->
-<li class="list-inline-item dropdown">
-    <a class="nav-text-color nav-link d-block d-lg-none" href="#" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        <div class="text-center">
-            <div><i class="fas fa-user fa-lg"></i></div>
+      <form class="form" method="GET" action="{% url 'items' %}">
+        <div class="input-group w-70">
+          <input class="form-control border" type="text" name="q" placeholder="Search the gallery">
+          <div class="input-group-append">
+            <button class="form-control btn" type="submit">
+              <span class="icon">
+                <i class="fas fa-search"></i>
+              </span>
+            </button>
+          </div>
         </div>
+      </form>
+    </div>
+  </li>
+</ul>
+
+<!-- account -->
+<ul>
+  <li class="list-inline-item dropdown">
+    <a class="nav-text-color nav-link d-block d-lg-none" href="#" data-toggle="dropdown" aria-haspopup="true"
+      aria-expanded="false">
+      <div class="text-center">
+        <div><i class="fas fa-user fa-lg"></i></div>
+      </div>
     </a>
     <div class="dropdown-menu border-0 nav-text-color" aria-labelledby="user-options">
-        {% if request.user.is_authenticated %}
-        {% if request.user.is_superuser %}
-        <a href="{% url 'add_item' %}" class="dropdown-item">Store Management</a>
-        <a href="{% url 'enquiries' %}" class="dropdown-item">Enquiries</a>
-        {% endif %}
-        <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-        <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-        {% else %}
-        <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-        <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-        {% endif %}
+      {% if request.user.is_authenticated %}
+      {% if request.user.is_superuser %}
+      <a href="{% url 'add_item' %}" class="dropdown-item">Store Management</a>
+      <a href="{% url 'enquiries' %}" class="dropdown-item">Enquiries</a>
+      {% endif %}
+      <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+      <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+      {% else %}
+      <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+      <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+      {% endif %}
     </div>
-</li>
-
+  </li>
+</ul>
 <!-- shopping cart -->
-<li class="list-inline-item">
+<ul>
+  <li class="list-inline-item">
     <a class="nav-text-color nav-link d-block d-lg-none" href="{% url 'view_cart' %}">
-        <div class="text-center">
-            <div><i class="fas fa-cart-shopping fa-lg"></i></div>
-            <p class="my-0">
-                {% if grand_total %}
-                €{{ grand_total|floatformat:2 }}
-                {% else %}
-                {% endif %}
-            </p>
-        </div>
+      <div class="text-center">
+        <div><i class="fas fa-cart-shopping fa-lg"></i></div>
+        <p class="my-0">
+          {% if grand_total %} €{{ grand_total|floatformat:2 }} {% else %} {% endif %}
+        </p>
+      </div>
     </a>
-</li>
+  </li>
+</ul>

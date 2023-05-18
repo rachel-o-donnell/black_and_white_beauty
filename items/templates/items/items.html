@@ -25,7 +25,7 @@
             <div class="col-12 my-auto order-md-last d-flex justify-content-center">
                 <div class="sort-select-wrapper w-60 mb-5">
                     <select id="sort-selector" class="custom-select custom-select-sm border">
-                        <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
+                        <option value="reset" {% if current_sorting == 'None_None' %} selected{% endif %}>Sort by...
                         </option>
                         <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Low
                             to high</option>
@@ -94,9 +94,7 @@
     </div>
 </div>
 <div class="mt-5">
-    <a class="d-flex">
-        <button class="btn-custom mx-auto my-auto">Back to top</button>
-    </a>
+    <a class="d-flex btn-custom mx-auto my-auto">Back to top</a>
 </div>
 {% endblock %}
 
@@ -104,14 +102,14 @@
 {{ block.super }}
 
 <!-- javascript for back to top button -->
-<script type="text/javascript">
+<script>
     $('.btn-custom').click(function (e) {
         window.scrollTo(0, 0)
     })
 </script>
 
 <!-- javascript for price selector -->
-<script type="text/javascript">
+<script>
     $('#sort-selector').change(function () {
         let selector = $(this);
         let currentUrl = new URL(window.location);

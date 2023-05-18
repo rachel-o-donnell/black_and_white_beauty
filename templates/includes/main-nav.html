@@ -1,24 +1,22 @@
 <div class="collapse navbar-collapse" id="main-nav">
-    <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item">
-            <a href="{% url 'home' %}" class="nav-text-color nav-link">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-text-color nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">Items
-            </a>
-            <div class="dropdown-menu border-0 nav-text-color" aria-labelledby="items-link">
-                <a href="{% url 'items' %}" class="dropdown-item">All Items</a>
-                <a href="{% url 'items' %}?sort=price&direction=asc" class="dropdown-item">Sort by Price</a>
-                <a href="{% url 'items' %}?category=prints" class="dropdown-item">Prints</a>
-                <a href="{% url 'items' %}?category=originals" class="dropdown-item">Originals</a>
-                <a href="{% url 'items' %}?category=butterflies" class="dropdown-item">Butterflies</a>
-                <a href="{% url 'items' %}?category=flora, fauna" class="dropdown-item">Flora &amp; Fauna</a>
-                <a href="{% url 'items' %}?category=fish" class="dropdown-item">Fish</a>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a href="{% url 'commissions' %}" class="nav-text-color nav-link">Commissions</a>
-        </li>
-    </ul>
+  <ul class="navbar-nav w-auto mx-auto">
+    <li class="nav-item">
+      <a href="{% url 'home' %}" class="nav-text-color nav-link">Home</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-text-color nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">Items
+      </a>
+      <div class="dropdown-menu border-0 nav-text-color" aria-labelledby="items-link">
+        <a href="{% url 'items' %}" class="dropdown-item">All Items</a>
+        <a href="{% url 'items' %}?sort=price&direction=asc" class="dropdown-item">Sort by Price</a>
+        <a href="{% url 'items' %}?category=butterflies" class="dropdown-item">Butterflies</a>
+        <a href="{% url 'items' %}?category=flora" class="dropdown-item">Flora</a>
+        <a href="{% url 'items' %}?category=fish" class="dropdown-item">Fish</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a href="{% url 'commissions' %}" class="nav-text-color nav-link">Commissions</a>
+    </li>
+  </ul>
 </div>

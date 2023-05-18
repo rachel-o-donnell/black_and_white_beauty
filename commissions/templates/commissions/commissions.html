@@ -68,16 +68,10 @@
     </div>
 </div>
 <div class="mt-5">
-    <a class="d-flex" href="{% url 'contact' %}">
-        <button class="btn btn-custom mt-5 mx-auto my-auto">Contact Us</button>
-    </a>
-   
+    <a class="d-flex btn btn-custom mt-5 mx-auto my-auto" href="{% url 'contact' %}">Contact Us</a> 
 </div>
 <div class="mt-5">
-    <a class="d-flex">
-        <button class="btn btn-custom top-btn mx-auto my-auto">Back to top</button>
-       
-    </a>
+    <a class="d-flex btn btn-custom top-btn mx-auto my-auto">Back to top</a>
 </div>
 
 {% endblock %}
@@ -86,7 +80,7 @@
 {{ block.super }}
 
 <!-- javascript for back to top button -->
-<script type="text/javascript">
+<script>
     $('.top-btn').click(function (e) {
         window.scrollTo(0, 0)
     })
