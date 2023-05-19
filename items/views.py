@@ -113,7 +113,8 @@ def edit_item(request, item_id):
             return redirect(reverse('item_detail', args=[item.id]))
         else:
             messages.error(
-                request, 'Failed to update item. Please ensure the form is valid.')
+                request, 'Failed to update item.'
+                ' Please ensure your form is valid.')
     else:
         form = ItemForm(instance=item)
         messages.info(request, f'You are editing {item.name}')
