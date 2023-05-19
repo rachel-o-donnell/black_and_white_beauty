@@ -1,5 +1,4 @@
 from django import forms
-from .widgets import CustomClearableFileInput
 from .models import Review
 
 from django.contrib.auth.models import User
@@ -13,7 +12,8 @@ class ReviewForm(forms.ModelForm):
         exclude = ('user', 'image_url')
 
     image = forms.ImageField(
-        label='We love seeing how you have styled your pieces in your home', required=False)
+        label='We love seeing how you have styled your pieces'
+        ' in your home', required=False)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -23,7 +23,8 @@ class ReviewForm(forms.ModelForm):
             'title': 'One word description',
             'body': 'Go on, give us some more detail...',
             'image': 'Image',
-            'featured': "Please tick this if you would like your review to be published on the site"
+            'featured': "Please tick this if you would like your review "
+                        " to be published on the site"
 
         }
 

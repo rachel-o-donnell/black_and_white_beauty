@@ -47,7 +47,8 @@ def add_review(request, item_id):
             return redirect(reverse('item_detail', args=[item.id]))
         else:
             messages.error(
-                request, "Sorry, something went wrong. Please ensure all fields are valid")
+                request, "Yikes, something went wrong."
+                " Please ensure your fields are valid")
             return redirect(reverse('item_detail', args=[item.id]))
     else:
         form = ReviewForm()
