@@ -75,7 +75,8 @@ def checkout(request):
                     return redirect(reverse('view_cart'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse(
+                'checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'There seems to be something wrong with \
                  your form. Please double check your information.')
@@ -143,7 +144,6 @@ def checkout_success(request, order_number):
         # Save the user's info
         if save_info:
             profile_data = {
-                
                 'default_phone_number': order.phone_number,
                 'default_street_address1': order.street_address1,
                 'default_street_address2': order.street_address2,

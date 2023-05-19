@@ -47,8 +47,8 @@ def adjust_cart(request, item_id):
     elif quantity < 0:
         messages.error(
             request,
-            "You cannot add negative quantities. Please remove the item /"
-            "using the 'Remove' button or update the number of items."
+            "You cannot add negative quantities. Please remove the item"
+            " using the 'Remove' button or update the number of items."
         )
 
     elif quantity > 0:
@@ -60,7 +60,7 @@ def adjust_cart(request, item_id):
         elif cart[item_id] + quantity < 0:
             messages.error(
                 request,
-                'You cannot add negative quantities. Please remove the item/'
+                'You cannot add negative quantities. Please remove the item'
                 ' using the "Remove" button or update the number of items.'
             )
         else:
