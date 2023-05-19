@@ -36,9 +36,9 @@
 {% block postloadjs %}
     {{ block.super }}
     <script>
-        $('#contact-new-image').change(function() {
+        $('#new-image').change(function() {
             var file = $('#new-image')[0].files[0];
-            $('#contact-filename').text(`Image will be set to: ${file.name}`);
+            $('#filename').text(`Image will be set to: ${file.name}`);
         });
     </script>
 {% endblock %}
