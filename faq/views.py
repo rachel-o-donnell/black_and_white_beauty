@@ -36,7 +36,8 @@ def add_faq(request):
             return redirect(reverse('add_faq'))
         else:
             messages.error(
-                request, 'Something went wrong, Please ensure the form is valid.')
+                request, 'Yikes! Something went wrong.'
+                ' Please ensure your form is valid.')
     else:
         form = FaqForm()
     template = 'faq/add_faq.html'
@@ -64,7 +65,8 @@ def edit_faq(request, faq_id):
             return redirect(reverse('faqs'))
         else:
             messages.error(
-                request, 'Something went wrong, Please ensure the form is valid.')
+                request, 'Yikes! Something went wrong.'
+                ' Please ensure your form is valid.')
     else:
         form = FaqForm(instance=faq)
 
