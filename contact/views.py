@@ -14,7 +14,8 @@ def contact(request):
         if form.is_valid():
             contact = form.save()
             messages.success(
-                request, 'Thank you for contacting us! We will get back to you by email within 24hrs.')
+                request, 'Thank you for contacting us!'
+                ' We will get back to you by email within 24hrs.')
             return redirect('/')
 
     else:
