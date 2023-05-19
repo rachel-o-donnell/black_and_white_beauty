@@ -12,7 +12,8 @@ class ContactForm(forms.ModelForm):
         fields = '__all__'
 
     image = forms.ImageField(
-        label='Add a pic below if its relevent to your query', required=False, widget=CustomClearableFileInput)
+        label='Add a pic below if its relevent to your query', required=False,
+        widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         """
@@ -25,12 +26,12 @@ class ContactForm(forms.ModelForm):
             'full_name': 'Full Name',
             'email': 'Email Address',
             'enquiry_subject': 'Reason for contacting',
-            'body': 'We welcome your enquiry! Please attach a photo below if relevent',
+            'body': 'We welcome your enquiry!'
+                    ' Please attach a photo below if relevent',
             'image_url': 'Current image',
             'image': 'If relevent',
             'order_number': 'If relevent',
             'dimensions': 'If relevent',
-
         }
 
         for field in self.fields:
