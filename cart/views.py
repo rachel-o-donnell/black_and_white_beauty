@@ -36,7 +36,8 @@ def adjust_cart(request, item_id):
     quantity = int(request.POST.get('quantity'))
     cart = request.session.get('cart', {})
 
-    """ Prevent anyone ordering more than the limit of 99 items or entering negative values"""
+    """ Prevent anyone ordering more than the limit of 99 items or entering /
+        negative values"""
     if quantity > 99:
         messages.error(
             request,
@@ -46,7 +47,8 @@ def adjust_cart(request, item_id):
     elif quantity < 0:
         messages.error(
             request,
-            "You cannot add negative quantities. Please remove the item using the 'Remove' button or update the number of items."
+            "You cannot add negative quantities. Please remove the item /"
+            "using the 'Remove' button or update the number of items."
         )
 
     elif quantity > 0:
@@ -58,12 +60,14 @@ def adjust_cart(request, item_id):
         elif cart[item_id] + quantity < 0:
             messages.error(
                 request,
-                f"You cannot add negative quantities. Please remove the item using the 'Remove' button or update the number of items.",
+                'You cannot add negative quantities. Please remove the item/'
+                ' using the "Remove" button or update the number of items.'
             )
         else:
             cart[item_id] = quantity
             messages.success(
-                request, f'Cart updated. You now have {quantity} x "{item.name}" in your cart.')
+                request, 'Cart updated. You now have / '
+                '{quantity} x "{item.name}" in your cart.')
     else:
         cart.pop(item_id)
         messages.success(
