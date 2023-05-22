@@ -11,16 +11,20 @@
 {% endblock %}
 
 {% block content %}
-<div class="container h-100 mt-5">
-    <div class="row h-100">
-        <div class="col my-auto">
-            <h1>Limited edition prints and originals</h1>
-            <div>
-                <h3>
-                    <a href="{% url 'items' %}" class="btn btn-lg text-uppercase">Shop the gallery</a>
-                </h3>
-            </div>
-        </div>
+
+
+<div class="container-fluid image-container text-center mb-5">
+
+    <img src="/media/red.webp" alt="Black and white drawing of a red admiral butterfly" id="hero-image">
+    <div>
+        <h1>Limited edition drawings and prints</h1>
+        <h2>Hand drawn and printed in Ireland with 5% of every purchase donated to The Irish
+            Wildlife Trust</h2>
+        <h3>
+            <a href="{% url 'items' %}" class="btn btn-lg text-uppercase">Shop the gallery</a>
+        </h3>
     </div>
 </div>
+
+
 {% endblock %}
