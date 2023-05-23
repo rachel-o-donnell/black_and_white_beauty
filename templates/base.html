@@ -47,9 +47,9 @@
         <!-- banner -->
         <div id="delivery-banner" class="row text-center">
             <div class="col banner">
-                <h6 class="my-1 font-weight-lighter border">Free delivery on orders over
+                <p class="my-1 font-weight-lighter border">Free delivery on orders over
                     €{{ free_delivery_threshold }}!
-                </h6>
+                </p>
             </div>
         </div>
         <!-- navbar -->
@@ -59,7 +59,7 @@
             <div id="topnav" class="row pt-lg-2 mt-3 justify-content-center">
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-start">
                     <a class="navbar-brand nav-link main-logo-link" href="{% url 'home' %}">
-                        <h2 class="logo my-auto nav-text-color my-0 font-weight-light">Black & White Beauty</h2>
+                        <span class="logo my-auto nav-text-color my-0 font-weight-light">Black & White Beauty</span>
                     </a>
                 </div>
             </div>
@@ -84,7 +84,7 @@
 
                 <!-- account -->
                 <div class="col-12 col-lg-4 py-1 py-lg-0 ml-auto">
-                    <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                    <ol class="list-inline list-unstyled text-center text-lg-right my-0">
                         <li class="list-inline-item dropdown">
                             <a class="nav-text-color nav-link" href="#" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
@@ -122,7 +122,7 @@
                                 </div>
                             </a>
                         </li>
-                    </ul>
+                    </ol>
                 </div>
             </div>
             <div class="row">
@@ -170,37 +170,44 @@
         <div class="container pt-3">
             <!-- Social media -->
             <div class="mb-4">
-                <a class="btn btn-link btn-floating btn-lg footer-text-color" href="https://www.facebook.com/"
-                    target="blank" role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-link btn-floating btn-lg footer-text-color" href="https://twitter.com/" target="blank"
-                    role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-link btn-floating btn-lg footer-text-color" href="https://www.instagram.com/"
-                    target="blank" role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
-                <a class="btn btn-link btn-floating btn-lg footer-text-color"
+                <a class="btn btn-link btn-floating btn-lg footer-text-color" rel="noopener"
+                    href="https://www.facebook.com/" target="blank" role="button" data-mdb-ripple-color="dark"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-link btn-floating btn-lg footer-text-color" rel="noopener" href="https://twitter.com/"
+                    target="blank" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-link btn-floating btn-lg footer-text-color" rel="noopener"
+                    href="https://www.instagram.com/" target="blank" role="button" data-mdb-ripple-color="dark"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="btn btn-link btn-floating btn-lg footer-text-color" rel="noopener"
                     href="https://www.linkedin.com/in/rachel-o-donnell-397aa2180/" role="button" target="blank"
                     data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
-                <a class="btn btn-link btn-floating btn-lg footer-text-color" href="https://github.com/rachel-o-donnell"
-                    target="blank" role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+                <a class="btn btn-link btn-floating btn-lg footer-text-color" rel="noopener"
+                    href="https://github.com/rachel-o-donnell" target="blank" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
                 <hr>
             </div>
         </div>
-        <div class="container">
-            <div class="col">
-                <div class="row">
-                    <ul class="navbar-nav">
-                        <li class="mt-5">
-                            <a class="d-flex footer-text-color" href="{% url 'contact' %}">Contact Us</a>
-                        </li>
-                        <li class="mt-5">
-                            <a class="d-flex footer-text-color" href="{% url 'faqs' %}">FAQ's</a>
-                        </li>
-                    </ul>
+        <footer class="container-fluid">
+            <div class="row">
+                <!-- Footer navigation -->
+                <div class="col text-center pt-3">
+                    <div class="d-flex justify-content-center pb-3">
+                        <ol class="nav flex-column">
+                            <li class="mt-3">
+                                <a class="d-flex footer-text-color" href="{% url 'contact' %}">Contact Us</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="d-flex footer-text-color" href="{% url 'faqs' %}">FAQ's</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="d-flex footer-text-color" href="#">Sitemap</a>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
-                <div>
-                    <div class="mt-5">
-
-                        <!-- Begin Mailchimp Signup Form -->
-
+                <!-- Begin Mailchimp Signup Form -->
+                <div class="d-flex justify-content-center">
+                    <div class="col">
                         <div id="mc_embed_signup">
                             <form
                                 action="https://herokuapp.us8.list-manage.com/subscribe/post?u=9b1d044cf04e9b7dc1ba19efe&amp;id=464b1cd30f&amp;f_id=00065de0f0"
@@ -240,43 +247,48 @@
                                 </div>
                             </form>
                         </div>
-
                     </div>
+                </div>
+                <div class="col text-center pt-3">
+                    <a href="https://iwt.ie/" rel="external nofollow noopener" target="_blank">
+                        <img src="https://iwt.ie/wp-content/uploads/2017/08/IWT-logo.png" alt="Rainforest Alliance logo"
+                            class="m-3" width="150" height="150">
+                    </a>
                 </div>
             </div>
             <div class="text-center footer-text-color p-2 pb-5">
                 © 2023 Copyright:
                 <a class="footer-text-color" href="{% url 'home' %}">Black & White Beauty</a>
             </div>
-        </div>
-    </footer>
+            </div>
+        </footer>
 
-    {% block postloadjs %}
-    <script>
-        $('.toast').toast('show');
-    </script>
-    <!-- mailchimp js -->
-    <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-    <script>
-        (function ($) {
-            window.fnames = new Array();
-            window.ftypes = new Array();
-            fnames[0] = 'EMAIL';
-            ftypes[0] = 'email';
-            fnames[1] = 'FNAME';
-            ftypes[1] = 'text';
-            fnames[2] = 'LNAME';
-            ftypes[2] = 'text';
-            fnames[3] = 'ADDRESS';
-            ftypes[3] = 'address';
-            fnames[4] = 'PHONE';
-            ftypes[4] = 'phone';
-            fnames[5] = 'BIRTHDAY';
-            ftypes[5] = 'birthday';
-        }(jQuery));
-        var $mcj = jQuery.noConflict(true);
-    </script>
-    {% endblock %}
+        {% block postloadjs %}
+        <script>
+            $('.toast').toast('show');
+        </script>
+        <!-- mailchimp js -->
+        <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+        <script>
+            (function ($) {
+                window.fnames = new Array();
+                window.ftypes = new Array();
+                fnames[0] = 'EMAIL';
+                ftypes[0] = 'email';
+                fnames[1] = 'FNAME';
+                ftypes[1] = 'text';
+                fnames[2] = 'LNAME';
+                ftypes[2] = 'text';
+                fnames[3] = 'ADDRESS';
+                ftypes[3] = 'address';
+                fnames[4] = 'PHONE';
+                ftypes[4] = 'phone';
+                fnames[5] = 'BIRTHDAY';
+                ftypes[5] = 'birthday';
+            }(jQuery));
+            var $mcj = jQuery.noConflict(true);
+        </script>
+        {% endblock %}
 </body>
 
 </html>

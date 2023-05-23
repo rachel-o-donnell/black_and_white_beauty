@@ -105,7 +105,7 @@ button:focus,
     cursor: pointer;
 }
 
-/* Mailchimp form style */
+/* ------------------------------- Mailchimp form style */
 #mc_embed_signup {
     background: #fff5ee;
     clear: left;
@@ -118,6 +118,17 @@ button:focus,
     background: #fff5ee !important;
 }
 
+#mc_embed_signup .img {
+    width: 100%;
+}
+
+#mc_embed_signup .optionalParent {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
 
 /* delete warning pop ups  */
 .modal-header,
@@ -320,12 +331,6 @@ button:focus,
 }
 
 
-@media (min-width: 480px) {
-    .logo {
-        font-size: 32px;
-    }
-}
-
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
@@ -371,15 +376,4 @@ button:focus,
         padding: .25rem .5rem !important;
     }
 
-    #mc_embed_signup .img {
-        width: 100%;
-    }
-
-    #mc_embed_signup .optionalParent {
-
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-    }
 }
