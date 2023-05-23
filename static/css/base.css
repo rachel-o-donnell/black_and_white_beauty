@@ -52,6 +52,10 @@ footer {
     margin-right: 70px;
 }
 
+.searchbar {
+    background-color: #fff5ee;
+}
+
 .button {
     background: #0E1D18;
     color: #fff5ee;
@@ -62,14 +66,37 @@ footer {
     color: #fff5ee;
 }
 
+
+.btn-outline {
+    border-block-color: #0E1D18;
+    background: #fff5ee;
+    /* outline-color: crimson; */
+    color: #0E1D18;
+}
+
+.btn-edit {
+    border-block-color: rgb(9, 111, 151);
+    background: #fff;
+    color: rgb(9, 111, 151);
+    font-weight: bolder;
+}
+
+.btn-delete {
+    border-block-color: rgb(165, 15, 15);
+    background: #fff;
+    color: rgb(165, 15, 15);
+    font-weight: bolder;
+}
+
+
 button:hover,
 button:active,
 button:focus,
 .btn-custom:hover,
 .btn-custom:active,
 .btn-custom:focus {
-    background: #0E1D18;
-    color: #fff5ee;
+    background: #fff5ee;
+    color: #0E1D18;
 }
 
 .nav-text-color,

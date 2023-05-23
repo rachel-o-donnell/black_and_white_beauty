@@ -60,10 +60,10 @@
                             {% endif %}
                             <!-- Admin edit or delete and item  -->
                             {% if request.user.is_superuser %}
-                            <small class="ml-3">
-                                <a href="{% url 'edit_item' item.id %}">Edit</a>
-                                <a class="text-danger" href="{% url 'delete_item' item.id %}">Delete</a>
-                            </small>
+                            <div class="m-3">
+                                <a class="btn btn-edit" href="{% url 'edit_item' item.id %}">Edit</a>
+                                <a class="btn btn-delete" href="{% url 'delete_item' item.id %}">Delete</a>
+                            </div>
                             {% endif %}
                         </div>
                     </div>
@@ -93,9 +93,13 @@
         </div>
     </div>
 </div>
-<div class="mt-5">
-    <a class="d-flex btn-custom mx-auto my-auto">Back to top</a>
+<div class="text-center mt-5 mb-5">
+    <a class="btn btn-outline">
+        <span class=" icon">
+            <i class="fas fa-chevron-up" aria-hidden="true"></i>
+        </span>Back to top</a>
 </div>
+
 {% endblock %}
 
 {% block postloadjs %}
@@ -103,7 +107,7 @@
 
 <!-- javascript for back to top button -->
 <script>
-    $('.btn-custom').click(function (e) {
+    $('.btn-outline').click(function (e) {
         window.scrollTo(0, 0)
     })
 </script>

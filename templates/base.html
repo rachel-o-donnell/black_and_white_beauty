@@ -73,8 +73,9 @@
                 <!-- searchbar -->
                 <div class=" col-12 col-lg-4 my-auto py-1 py-lg-0 text-center justify-content-center">
                     <form method="GET" action="{% url 'items' %}">
-                        <div class="input-group w-70">
-                            <input class="form-control border" type="text" name="q" placeholder="Search the gallery">
+                        <div class="input-group w-51">
+                            <input class="form-control border searchbar" type="text" name="q"
+                                placeholder="Search the gallery">
                             <div class="input-group-append">
                                 <button class="form-control btn" type="submit">
                                     <span class="icon">
@@ -191,7 +192,7 @@
                 <hr>
             </div>
         </div>
-        <footer class="container-fluid">
+        <div class="container-fluid">
             <div class="row">
                 <!-- Footer navigation -->
                 <div class="col text-center pt-3">
@@ -255,8 +256,8 @@
                 </div>
                 <div class="col text-center pt-3">
                     <a href="https://iwt.ie/" rel="external nofollow noopener" target="_blank">
-                        <img src="https://iwt.ie/wp-content/uploads/2017/08/IWT-logo.png" alt="Rainforest Alliance logo"
-                            class="m-3" width="150" height="150">
+                        <img src="https://iwt.ie/wp-content/uploads/2017/08/IWT-logo.png"
+                            alt="Irish Wildlife Trust Logo" class="m-3" width="150" height="150">
                     </a>
                 </div>
             </div>
@@ -264,35 +265,35 @@
                 © 2023 Copyright:
                 <a class="footer-text-color" href="{% url 'home' %}">Black & White Beauty</a>
             </div>
-            </div>
-        </footer>
+        </div>
+    </footer>
 
-        {% block postloadjs %}
-        <script>
-            $('.toast').toast('show');
-        </script>
-        <!-- mailchimp js -->
-        <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-        <script>
-            (function ($) {
-                window.fnames = new Array();
-                window.ftypes = new Array();
-                fnames[0] = 'EMAIL';
-                ftypes[0] = 'email';
-                fnames[1] = 'FNAME';
-                ftypes[1] = 'text';
-                fnames[2] = 'LNAME';
-                ftypes[2] = 'text';
-                fnames[3] = 'ADDRESS';
-                ftypes[3] = 'address';
-                fnames[4] = 'PHONE';
-                ftypes[4] = 'phone';
-                fnames[5] = 'BIRTHDAY';
-                ftypes[5] = 'birthday';
-            }(jQuery));
-            var $mcj = jQuery.noConflict(true);
-        </script>
-        {% endblock %}
+    {% block postloadjs %}
+    <script>
+        $('.toast').toast('show');
+    </script>
+    <!-- mailchimp js -->
+    <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script>
+        (function ($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[0] = 'EMAIL';
+            ftypes[0] = 'email';
+            fnames[1] = 'FNAME';
+            ftypes[1] = 'text';
+            fnames[2] = 'LNAME';
+            ftypes[2] = 'text';
+            fnames[3] = 'ADDRESS';
+            ftypes[3] = 'address';
+            fnames[4] = 'PHONE';
+            ftypes[4] = 'phone';
+            fnames[5] = 'BIRTHDAY';
+            ftypes[5] = 'birthday';
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);
+    </script>
+    {% endblock %}
 </body>
 
 </html>
