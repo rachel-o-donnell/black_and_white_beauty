@@ -74,20 +74,26 @@ footer {
     color: #0E1D18;
 }
 
-.btn-edit {
+.btn-edit,
+.btn-edit-detail {
     border-block-color: rgb(9, 111, 151);
     background: #fff;
     color: rgb(9, 111, 151);
     font-weight: bolder;
 }
 
-.btn-delete {
+.btn-delete,
+.btn-delete-detail {
     border-block-color: rgb(165, 15, 15);
     background: #fff;
     color: rgb(165, 15, 15);
     font-weight: bolder;
 }
 
+.btn-edit-detail,
+.btn-delete-detail {
+    background: #fff5ee;
+}
 
 button:hover,
 button:active,

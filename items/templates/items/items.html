@@ -15,8 +15,8 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
-            <h2 class="logo-font">All Items</h2>
-            <hr class="w-50 mb-5">
+            <h1 class="logo-font">All Items</h1>
+            <hr class="w-50">
         </div>
     </div>
     <div class="row">
@@ -62,7 +62,43 @@
                             {% if request.user.is_superuser %}
                             <div class="m-3">
                                 <a class="btn btn-edit" href="{% url 'edit_item' item.id %}">Edit</a>
-                                <a class="btn btn-delete" href="{% url 'delete_item' item.id %}">Delete</a>
+                                <a class="btn btn-delete" href="{% url 'delete_item' item.id %}" data-toggle="modal"
+                                    data-target="#modal-{{ item.id }}">Delete</a>
+                            </div>
+                            <!-- Modal pop up to prevent unintentional deletion of a item -->
+                            <div class="text-center">
+                                <div id="modal-{{ item.id }}" class="modal" tabindex="-1" role="dialog"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <div class="card modal-card p-sm-3 p-2 justify-content-center">
+                                                    <div class="card-header modal-header pb-0">
+                                                        <div class="row">
+                                                            <div class="col ml-auto">
+                                                            </div>
+                                                        </div>
+                                                        <p class="font-weight-bold text-danger mb-2">
+                                                            Are you sure you want to delete this item? This action
+                                                            cannot be undone.
+                                                        </p>
+                                                    </div>
+                                                    <!-- pop up buttons -->
+                                                    <div
+                                                        class="card-body modal-body px-sm-4 mb-2 pt-2 pb-0 text-center">
+                                                        <div class="row justify-content-center pt-2 no-gutters">
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-custom mt-1 mb-3 mx-2"
+                                                                data-dismiss="modal">Cancel</button>
+                                                            <a href="{% url 'delete_item' item.id %}"
+                                                                class="btn btn-sm btn-custom mt-1 mb-3 mx-2">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             {% endif %}
                         </div>
@@ -94,10 +130,12 @@
     </div>
 </div>
 <div class="text-center mt-5 mb-5">
-    <a class="btn btn-outline">
+    <a class="btn btn-outline top-btn">
         <span class=" icon">
             <i class="fas fa-chevron-up" aria-hidden="true"></i>
-        </span>Back to top</a>
+        </span>
+        <span>Back to top</span>
+    </a>
 </div>
 
 {% endblock %}
@@ -107,7 +145,7 @@
 
 <!-- javascript for back to top button -->
 <script>
-    $('.btn-outline').click(function (e) {
+    $('.top-btn').click(function (e) {
         window.scrollTo(0, 0)
     })
 </script>
