@@ -27,7 +27,8 @@
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                     <div class="card h-100 border-1">
                         <a href="{% url 'commission_detail' commission.id %}">
-                            <img class="card-img-top img-fluid" src="{{ commission.image.url }}" alt="{{ commission.name }} {{ commission.description }}">
+                            <img class="card-img-top img-fluid" src="{{ commission.image.url }}"
+                                alt="{{ commission.name }} {{ commission.description }}">
                         </a>
                         <div class="card-body pb-0">
                             <p class="mb-0">{{ commission.name }}</p>
@@ -38,7 +39,7 @@
                                     <p class="lead mb-0 text-left">{{ commission.dimensions }}</p>
                                 </div>
                             </div>
-                            <hr>                          
+                            <hr>
                         </div>
                     </div>
                 </div>
@@ -67,11 +68,16 @@
         </div>
     </div>
 </div>
-<div class="mt-5">
-    <a class="d-flex btn btn-custom mt-5 mx-auto my-auto" href="{% url 'contact' %}">Contact Us</a> 
+<div class="mt-5 text-center">
+    <a class="btn btn-custom mt-5 mx-auto my-auto" href="{% url 'contact' %}">Contact Us</a>
 </div>
-<div class="mt-5">
-    <a class="d-flex btn btn-custom top-btn mx-auto my-auto">Back to top</a>
+<div class="text-center mt-3 mb-5">
+    <a class="btn btn-outline top-btn">
+        <span class=" icon">
+            <i class="fas fa-chevron-up" aria-hidden="true"></i>
+        </span>
+        <span>Back to top</span>
+    </a>
 </div>
 
 {% endblock %}
