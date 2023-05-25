@@ -6,13 +6,22 @@
 
 {% block content %}
 
-<h1>{% trans 'OpenID Sign In' %}</h1>
-
-
-<form id="openid_login_form" class="openid_login" method="post" action="{% url 'openid_login' %}">
-{% csrf_token %}
-{{form.as_p}}
-<button type="submit">Sign In</button>
-</form>
-
+<div class="container mb-3">
+    <div class="row text-center">
+        <div class="col text-center">
+            <h2 class="mb-4 ">{% trans 'OpenID Sign In' %}</h2>
+            <hr class="w-50">
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-6 text-center">
+            <form id="openid_login_form" class="openid_login" method="post" action="{% url 'openid_login' %}">
+                {% csrf_token %}
+                {{form.as_p}}
+                <button class="btn-btn-custom" type="submit">Sign In</button>
+            </form>
+            <hr>
+        </div>
+    </div>
+</div>
 {% endblock %}
