@@ -75,24 +75,30 @@ footer {
 }
 
 .btn-edit,
-.btn-edit-detail {
-    border-block-color: rgb(9, 111, 151);
-    background: #fff;
-    color: rgb(9, 111, 151);
-    font-weight: bolder;
+.btn-edit-detail,
+.update-btn {
+    border-block-color: rgb(9, 111, 151) !important;
+    background: #fff !important;
+    color: rgb(9, 111, 151) !important;
+    font-weight: bolder !important;
+    padding: 0%;
 }
 
 .btn-delete,
-.btn-delete-detail {
-    border-block-color: rgb(165, 15, 15);
-    background: #fff;
-    color: rgb(165, 15, 15);
-    font-weight: bolder;
+.btn-delete-detail,
+.remove-btn {
+    border-block-color: rgb(165, 15, 15) !important;
+    background: #fff !important;
+    color: rgb(165, 15, 15) !important;
+    font-weight: bolder !important;
+    padding: 0%;
 }
 
 .btn-edit-detail,
-.btn-delete-detail {
-    background: #fff5ee;
+.btn-delete-detail,
+.update-btn,
+.remove-btn {
+    background: #fff5ee !important;
 }
 
 button:hover,
@@ -110,6 +116,10 @@ button:focus,
 .btn-outline:focus {
     background: #0E1D18 !important;
     color: #fff5ee !important;
+}
+
+.quantity {
+    width: 100% !important;
 }
 
 .nav-text-color,
@@ -144,6 +154,7 @@ button:focus,
 .remove-btn {
     cursor: pointer;
 }
+
 
 /* ------------------------------- Mailchimp form style */
 #mc_embed_signup {
@@ -337,6 +348,7 @@ button:focus,
     #hero-image {
         width: 50%;
     }
+
 }
 
 
@@ -371,9 +383,6 @@ button:focus,
         font-size: .9rem;
     }
 
-    .btn.btn-custom {
-        padding: .375rem .375rem;
-    }
 
     .btn.btn-custom.btn-lg {
         padding: .375rem .375rem;
@@ -385,4 +394,10 @@ button:focus,
         padding: .25rem .5rem !important;
     }
 
+}
+
+@media (max-width: 576px) {
+    .quantity {
+        width: 60% !important;
+    }
 }
