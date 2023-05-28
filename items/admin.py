@@ -8,6 +8,7 @@ class ItemAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'category',
+        'description',
         'price',
         'dimensions',
         'image',
