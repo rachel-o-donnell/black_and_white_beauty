@@ -16,63 +16,67 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container mt-5">
+<div class="container mt3">
     <div class="row">
         <div class="col">
             <hr>
-            <h2 class="mb-4">Enquiries</h2>
-            <hr>
+            <h2 class="mb-4 text-center">Enquiries</h2>
+            <hr class="w-50">
         </div>
     </div>
-    
-    <div class="past-orders table-responsive">
-        <table class="table table-sm table-borderless">
-            <thead>
-                <tr>
-                    <th>Enquiry #</th>
-                    <th>Date</th>
-                    <th>From</th>
-                    <th>Email</th>
-                    <th>Subject</th>
-                    <th>Message</th>
-                    <th>Order #</th>
-                    <th>Dimensions</th>
-                    <th>Image</th>
-                </tr>
-         </thead>
-            <tbody>
-            {% for enquiry in contact_list  %}
-            <tr>
-            <th scope="row">{{ forloop.counter }}</th>
-            <td>{{ enquiry.date }}</td>
-            <td>{{ enquiry.full_name }}
-            </td>
-            <td>{{ enquiry.email }}
-            </td>
-            <td>{{ enquiry.enquiry_subject }}
-            </td>
-            <td>{{ enquiry.body}}
-            </td>
-            <td> 
-             <a href="#">{{ enquiry.order_number}}</a>
-            </td>
-             <td>{{ enquiry.dimensions }}
-            </td>
-            <td>
-            {% if enquiry.image %}
-            <div class="image-container my-5">
-             <a href="{{ enquiry.image.url }}" target="_blank">
-                 <img class="card-img-top img-fluid" src="{{ enquiry.image.url  }}" alt="{{ item.name }}">
-              </a>
-            {% else %}
-             <p>N/A</p>
-            </div>  
-            {% endif %}
-            </td>
-            </tr>
-            {% endfor %}
-            </tbody>
-        </table>
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-6">
+            <div class=" past-orders table-responsive">
+                <table class="table table-sm table-borderless">
+                    <thead>
+                        <tr>
+                            <th>Enquiry #</th>
+                            <th>Date</th>
+                            <th>From</th>
+                            <th>Email</th>
+                            <th>Subject</th>
+                            <th>Message</th>
+                            <th>Order #</th>
+                            <th>Dimensions</th>
+                            <th>Image</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for enquiry in contact_list  %}
+                        <tr>
+                            <th scope="row">{{ forloop.counter }}</th>
+                            <td>{{ enquiry.date }}</td>
+                            <td>{{ enquiry.full_name }}
+                            </td>
+                            <td>{{ enquiry.email }}
+                            </td>
+                            <td>{{ enquiry.enquiry_subject }}
+                            </td>
+                            <td>{{ enquiry.body}}
+                            </td>
+                            <td>
+                                <a href="#">{{ enquiry.order_number}}</a>
+                            </td>
+                            <td>{{ enquiry.dimensions }}
+                            </td>
+                            <td>
+                                {% if enquiry.image %}
+                                <div class="image-container my-5">
+                                    <a href="{{ enquiry.image.url }}" target="_blank">
+                                        <img class="card-img-top img-fluid" src="{{ enquiry.image.url  }}"
+                                            alt="{{ item.name }}">
+                                    </a>
+                                    {% else %}
+                                    <p>N/A</p>
+                                </div>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}
