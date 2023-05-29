@@ -181,7 +181,7 @@ button:focus,
     justify-content: center;
 }
 
-/* delete warning pop ups  */
+/* ------------------------------- delete warning pop ups  */
 .modal-header,
 .modal-body {
     background: #fff5ee;
@@ -220,7 +220,7 @@ button:focus,
     right: 36px;
 }
 
-/* Convenience classes - colors copied from Bootstrap */
+/* ------------------------------- Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
     border-bottom-color: #007bff !important;
 }
@@ -259,13 +259,12 @@ button:focus,
     overflow-y: auto;
 }
 
-/* Allauth form formatting */
+/* ------------------------------- Allauth form formatting */
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
-    /* mt-4 */
     color: #6c757d;
-    /* text-secondary */
+
 }
 
 .allauth-form-inner-content input {
@@ -282,10 +281,9 @@ button:focus,
 
 .allauth-form-inner-content a {
     color: #17a2b8;
-    /* text-info */
 }
 
-/* Product Form */
+/* ------------------------------- Product Form */
 
 .btn-file {
     position: relative;
@@ -313,6 +311,17 @@ button:focus,
     border-radius: 0;
 }
 
+/* ------------------------------- Default width of the column */
+.enquiries th {
+    font-weight: bolder
+}
+
+
+.enquiries td {
+    font-size: .7rem
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -326,7 +335,7 @@ button:focus,
     }
 }
 
-/* fixed top navbar only on medium and up */
+/* f------------------------------- ixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -352,15 +361,11 @@ button:focus,
 }
 
 
-/* pad the top a bit when navbar is collapsed on mobile */
+/* ------------------------------- pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
     }
-
-    /* body {
-        height: calc(100vh - 116px);
-    } */
 
     .display-4 {
         font-size: 2rem;

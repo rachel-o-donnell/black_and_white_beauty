@@ -19,18 +19,17 @@
 <div class="container mt3">
     <div class="row">
         <div class="col">
-            <hr>
             <h2 class="mb-4 text-center">Enquiries</h2>
             <hr class="w-50">
         </div>
     </div>
-    <div class="row justify-content-center">
-        <div class="col-12 col-lg-6">
-            <div class=" past-orders table-responsive">
-                <table class="table table-sm table-borderless">
+    <div class="row table-responsive">
+        <div class="col-14">
+            <div class="mb-5">
+                <table class="table enquiries table-striped table-borderless">
                     <thead>
                         <tr>
-                            <th>Enquiry #</th>
+                            <th>#</th>
                             <th>Date</th>
                             <th>From</th>
                             <th>Email</th>
@@ -54,22 +53,23 @@
                             </td>
                             <td>{{ enquiry.body}}
                             </td>
-                            <td>
-                                <a href="#">{{ enquiry.order_number}}</a>
+                            <td>{{ enquiry.order_number}}
                             </td>
                             <td>{{ enquiry.dimensions }}
                             </td>
                             <td>
                                 {% if enquiry.image %}
-                                <div class="image-container my-5">
+                                <div class="image-container">
                                     <a href="{{ enquiry.image.url }}" target="_blank">
                                         <img class="card-img-top img-fluid" src="{{ enquiry.image.url  }}"
                                             alt="{{ item.name }}">
                                     </a>
-                                    {% else %}
-                                    <p>N/A</p>
                                 </div>
+                                {% else %}
+                                <p>N/A</p>
+
                                 {% endif %}
+
                             </td>
                         </tr>
                         {% endfor %}
@@ -78,5 +78,25 @@
             </div>
         </div>
     </div>
+    <div class="text-center mt-3 mb-5">
+        <a class="btn btn-custom top-btn">
+            <span class=" icon">
+                <i class="fas fa-chevron-up" aria-hidden="true"></i>
+            </span>
+            <span>Back to top</span>
+        </a>
+    </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+
+<!-- javascript for back to top button -->
+<script>
+    $('.top-btn').click(function (e) {
+        window.scrollTo(0, 0)
+    })
+</script>
+
 {% endblock %}
