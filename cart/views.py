@@ -98,12 +98,11 @@ def adjust_cart(request, item_id):
         else:
             cart[item_id] = quantity
             messages.success(
-                request,  f'You added {quantity} x "{item.name}" to your cart.')  # noqa
+                request, f'You now have {quantity} x "{item.name}" in your cart')  # noqa
     else:
         cart.pop(item_id)
         messages.success(
-            request, f'You added {quantity} x "{item.name}" to your cart')
-
+            request, f'You now have {quantity} x "{item.name}" in your cart')
     request.session['cart'] = cart
     return redirect(reverse('view_cart'))
 
