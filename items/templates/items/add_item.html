@@ -24,7 +24,6 @@
         <div class="col-12 col-lg-6">
             <form method="POST" action="{% url 'add_item' %}" class="form mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
-                <!-- {{ foobar|safe }} -->
                 {% for field in form %}
                 {% if field.name != 'image' %}
                 {{ field | as_crispy_field }}
@@ -47,9 +46,9 @@
 {% block postloadjs %}
 {{ block.super }}
 <script>
-    $('#image').change(function () {
-        let file = $('#new-image')[0].files[0];
-        $('#filename').text(`Image will be set to: ${file.name}`);
+    $('#id_image').change(function () {
+        let file = $('#id_image')[0].files[0];
+        $('.filename').text(`Image will be set to: ${file.name}`);
     });
 </script>
 {% endblock %}
