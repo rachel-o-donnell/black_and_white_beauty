@@ -16,6 +16,14 @@
     <div class="row">
         <div class="col">
             <h1 class="mb-4 text-center">Add Review</h1>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
+                    <h2 class="mb-4 text-center"><strong>We love seeing how you have styled your pieces or hearing about
+                            your experience with our products so we can continue to produce quality artwork that
+                            deserves pride of place on your gallery wall.
+                        </strong></h2>
+                </div>
+            </div>
             <hr class="w-50">
         </div>
     </div>
@@ -31,10 +39,21 @@
                 {{ field }}
                 {% endif %}
                 {% endfor %}
-                <button class="btn btn-custom">Submit</button>
-                <a class="btn btn-outline" href="/">Cancel</a>
+                <div class="text-center mt-3 mb-3">
+                    <button class="btn btn-custom">Submit</button>
+                    <a class="btn btn-outline" href="/">Cancel</a>
+                </div>
             </form>
         </div>
     </div>
 </div>
+{% endblock %}
+{% block postloadjs %}
+{{ block.super }}
+<script>
+    $('#id_image').change(function () {
+        let file = $('#id_image')[0].files[0];
+        $('.filename').text(`Image will be set to: ${file.name}`);
+    });
+</script>
 {% endblock %}
