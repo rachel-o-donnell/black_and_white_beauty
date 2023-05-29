@@ -24,9 +24,7 @@ class Item(models.Model):
     dimensions = models.CharField(max_length=250)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
-    estimated_dispatch = models.DateField(null=True, blank=True)
     in_stock = models.BooleanField(null=True, blank=True)
-    how_many_in_stock = models.IntegerField(null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
 
     def __str__(self):

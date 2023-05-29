@@ -12,7 +12,6 @@ class ItemAdmin(admin.ModelAdmin):
         'price',
         'dimensions',
         'image',
-        'how_many_in_stock'
     )
 
 
