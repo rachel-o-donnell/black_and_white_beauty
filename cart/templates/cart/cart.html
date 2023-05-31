@@ -142,7 +142,7 @@
     $('.update-btn').click(function (e) {
         let form = $(this).prev('.update-form');
         form.submit();
-    })
+    });
 
 
     // Remove item and reload on click
@@ -158,11 +158,11 @@
             .done(function () {
                 location.reload();
             });
-    })
+    });
 
     // back to top button
     $('.top-btn').click(function (e) {
-        window.scrollTo(0, 0)
-    })
+        window.scrollTo(0, 0);
+    });
 </script>
 {% endblock %}
