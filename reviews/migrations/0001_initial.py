@@ -19,15 +19,20 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Review',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(
+                    auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),  # noqa
                 ('title', models.CharField(max_length=30)),
                 ('body', models.TextField(max_length=500)),
-                ('image', models.ImageField(blank=True, null=True, upload_to='')),
+                ('image', models.ImageField(
+                    blank=True, null=True, upload_to='')),
                 ('featured', models.BooleanField(default=False)),
                 ('date', models.DateField(auto_now_add=True)),
-                ('commission', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='commissions.commissions')),
-                ('item', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='items.item')),
-                ('user', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
+                ('commission', models.ForeignKey(
+                    blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='commissions.commissions')),  # noqa
+                ('item', models.ForeignKey(
+                    blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='items.item')),  # noqa
+                ('user', models.ForeignKey(
+                    blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),  # noqa
             ],
             options={
                 'ordering': ['-date'],

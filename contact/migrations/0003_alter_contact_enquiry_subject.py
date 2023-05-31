@@ -13,6 +13,8 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='contact',
             name='enquiry_subject',
-            field=models.CharField(choices=[(None, 'Pick a Subject'), ('Commissions', 'Commissions'), ('Complaint', 'Complaint'), ('Orders', 'Orders'), ('Returns', 'Returns'), ('Other', 'Other')], max_length=20),
+            field=models.CharField(
+                choices=[(
+                    None, 'Pick a Subject'), ('Commissions', 'Commissions'), ('Complaint', 'Complaint'), ('Orders', 'Orders'), ('Returns', 'Returns'), ('Other', 'Other')], max_length=20),  # noqa
         ),
     ]

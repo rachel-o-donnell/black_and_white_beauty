@@ -16,14 +16,19 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Commissions',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('image_url', models.URLField(blank=True, max_length=1024, null=True)),
-                ('image', models.ImageField(blank=True, null=True, upload_to='')),
+                ('id', models.BigAutoField(
+                    auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),  # noqa
+                ('image_url', models.URLField(
+                    blank=True, max_length=1024, null=True)),
+                ('image', models.ImageField(
+                    blank=True, null=True, upload_to='')),
                 ('name', models.CharField(max_length=254)),
-                ('brief', models.CharField(blank=True, max_length=1024, null=True)),
+                ('brief', models.CharField(
+                    blank=True, max_length=1024, null=True)),
                 ('description', models.TextField(max_length=1024)),
                 ('dimensions', models.CharField(max_length=250)),
-                ('category', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='items.category')),
+                ('category', models.ForeignKey(
+                    blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='items.category')),  # noqa
             ],
         ),
     ]

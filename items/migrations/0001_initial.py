@@ -15,25 +15,33 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Category',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(
+                    auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),  # noqa
                 ('name', models.CharField(max_length=254)),
-                ('friendly_name', models.CharField(blank=True, max_length=100, null=True)),
+                ('friendly_name', models.CharField(
+                    blank=True, max_length=100, null=True)),
             ],
         ),
         migrations.CreateModel(
             name='Item',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(
+                    auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),  # noqa
                 ('name', models.CharField(max_length=254)),
                 ('description', models.TextField(max_length=1024)),
                 ('dimensions', models.CharField(max_length=250)),
-                ('image_url', models.URLField(blank=True, max_length=1024, null=True)),
-                ('image', models.ImageField(blank=True, null=True, upload_to='')),
-                ('estimated_dispatch', models.DateField(blank=True, null=True)),
+                ('image_url', models.URLField(
+                    blank=True, max_length=1024, null=True)),
+                ('image', models.ImageField(
+                    blank=True, null=True, upload_to='')),
+                ('estimated_dispatch', models.DateField(
+                    blank=True, null=True)),
                 ('in_stock', models.BooleanField(blank=True, null=True)),
-                ('how_many_in_stock', models.IntegerField(blank=True, null=True)),
+                ('how_many_in_stock', models.IntegerField(
+                    blank=True, null=True)),
                 ('price', models.DecimalField(decimal_places=2, max_digits=6)),
-                ('category', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='items.category')),
+                ('category', models.ForeignKey(
+                    blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='items.category')),  # noqa
             ],
         ),
     ]

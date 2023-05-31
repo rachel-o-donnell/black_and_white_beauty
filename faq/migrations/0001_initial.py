@@ -14,7 +14,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Faq',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(
+                    auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),  # noqa
                 ('question', models.CharField(max_length=250)),
                 ('answer', models.CharField(max_length=500)),
                 ('date', models.DateField(auto_now=True)),
