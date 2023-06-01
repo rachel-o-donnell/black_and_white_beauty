@@ -15,11 +15,11 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
-            <h1>{% for c in current_categories %}
+            <h1>All Items {% for c in current_categories %}
+                in
                 {{ c.friendly_name }}
                 {% endfor %}
             </h1>
-            <hr class="w-50">
         </div>
     </div>
     <div class="row">
