@@ -134,6 +134,11 @@ The only two errors came from JAvacript taken from Stripe and Mailchimp. I decid
 | Base.html toasts | PASS |
 | allauth email.html | PASS 
 | Checkout/js/stripe_elements.js | Error coming from Stripe |
-| Base.html MAilchimp | Errors - see image ||
+| Base.html MAilchimp | Errors - see image |
 
 &nbsp;
+
+# PYTHON
+Pycodestyle used as linter in terminal
+
+Pep8CI - all files pass without error
