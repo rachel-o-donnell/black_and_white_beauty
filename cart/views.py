@@ -19,7 +19,10 @@ def add_to_cart(request, item_id):
     item = get_object_or_404(Item, pk=item_id)
 
     if item_id in list(cart.keys()):
-        cart[item_id] += quantity
+        if cart[item_id] + quantity > 99:
+            cart[item_id] = 99
+        else:
+            cart[item_id] += quantity
     else:
         cart[item_id] = quantity
 
