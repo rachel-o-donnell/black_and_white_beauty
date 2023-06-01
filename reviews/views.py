@@ -11,7 +11,7 @@ def reviews(request, item_id):
     """ A view to show all available reviews for current item """
     item = get_object_or_404(Item, pk=item_id)
 
-    reviews = Review.objects.filter(item=item)
+    reviews = Review.objects.filter(featured=True).filter(item=item)
     template = 'reviews/reviews.html'
 
     context = {
