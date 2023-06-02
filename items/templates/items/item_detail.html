@@ -37,10 +37,10 @@
                 <p class="mt-3">{{ item.dimensions }}</p>
                 {% if item.in_stock %}
                 <p class="mt-3">In stock</p>
+                <p class="mt-3">Estimated dispatch date: next working day.</p>
                 {% else %}
-                <p class="mt-3">Out of stock</p>
+                <p class="mt-3 text-danger">Out of stock</p>
                 {% endif %}
-                <p class="mt-3">Estimated dispatch date: {{ item.estimated_dispatch }} </p>
                 <p class="lead mb-0 text-left">€{{ item.price }}</p>
 
                 <!-- Admin edit or delete and item  -->
@@ -96,7 +96,7 @@
                     </span>
                     <span>Add a review</span>
                 </a>
-
+                {% if item.in_stock %}
                 <!-- add to cart -->
                 <form class="form" action="{% url 'add_to_cart' item.id %}" method="POST">
                     {% csrf_token %}
@@ -139,6 +139,17 @@
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>
                 </form>
+                {% else %}
+                <div class="col-12">
+                    <a href="{% url 'items' %}" class="btn btn-outline mt-5">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span>Continue Shopping</span>
+                    </a>
+                    <a class="btn btn-custom mt-5" href="{% url 'contact' %}">Contact Us</a>
+                </div>
+                {% endif %}
             </div>
         </div>
     </div>

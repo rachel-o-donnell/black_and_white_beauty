@@ -1,6 +1,6 @@
 # **Black & White Beauty Testing Results**
 
-![amiresponsive mock-ups](./documentation/responsiveness/am-i-responsive-new.png)
+![amiresponsive mock-ups](./docs/responsive.png)
 
 <br/>
 
@@ -152,7 +152,7 @@ The only two errors came from JAvacript taken from Stripe and Mailchimp. I decid
 | Edit_Item.html | PASS |
 | Items.html (1) | PASS |
 | Items- quantity-input.html | PASS |
-| Commissions.html | 
+| Commissions.html | PASS |
 | countryfield/js profiles | PASS |
 | add_review.html | PASS |
 | Base.html toasts | PASS |
@@ -363,6 +363,8 @@ Manual tests were applied as I was building features to ensure all features adde
 |--------|---------|---------|---------|---------|
 | extra info displayed | - |  - |  - | PASS|
 | reviews button | clicking renders reviews page | clicked | PASS | PASS |
+| Item in stock | Item in stock, add to bag and qty button displays, dispatch est is next day |  updated item to in stock | - | PASS |
+| Item out of stock | Item out of stock, add to bag and qty button disappear - contact button displayed |  updated item to out of stock | - | PASS |
 | add reviews button | Pressing add review renders the review form | pressed the add review button | PASS | PASS |
 | Quantity button | add and minus buttons work | pressed plus and minus buttons | PASS | PASS |
 | Quantity button disabled | minus button disables when item is at 1 , plus disable when items are at 98 | pressed plus and minus buttons | PASS | PASS |
@@ -373,6 +375,8 @@ Manual tests were applied as I was building features to ensure all features adde
 |Delete button | MISSING |  DOES IT NEED TO BE HERE OR JUST IN THE CART???
 | Continue shopping | clicking brings to all items page | clicked button | PASS | PASS |
 | Add to cart | Adds item with quantity to cart | added various quantities of items to cart | PASS | PASS |
+| if item oos |
+| Contact Us | Clicking link opens the contact form page | clicked link |  PASS | PASS |
 | ADMIN EXTRAS |
 | ACCESS| Can only be accessed by Admin | typed items/edit to end of url as normal user | - | PASS |
 | Edit Items button | Clicking renders Edit Items page |  clicked button | PASS | PASS |
