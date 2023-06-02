@@ -179,45 +179,35 @@ Pep8CI - all files pass without error and can be found here
 
 # Lighthouse 
 Wc3 HTML - All pages pass without error
-| Testing | Results |
-|--------|---------|
-| Home page | [Lighthouse](/docs/lighthouse/) |
-| Login page | [Lighthouse](/docs/lighthouse/) |
-| Loggout page |[Lighthouse](/docs/lighthouse/) |
-| Register page |[Lighthouse](/docs/lighthouse/) |
-| Password reset | [Lighthouse](/docs/lighthouse/)
-| CART.HTML WITH ITEMS |[Lighthouse](/docs/lighthouse/) |
-| CART EMPTY HTML |[Lighthouse](/docs/lighthouse/) |
-| Items page |[Lighthouse](/docs/lighthouse/)
-| Items detail page |[Lighthouse](/docs/lighthouse/) |
-| Store Management page |[Lighthouse](/docs/lighthouse/) |
-| Edit Items page |[Lighthouse](/docs/lighthouse/) |
-| Delete Items page | [Lighthouse](/docs/lighthouse/)|
-| Commissions page | [Lighthouse](/docs/lighthouse/) |
-| Commissions detail page |[Lighthouse](/docs/lighthouse/) |
-| Contact.html |[Lighthouse](/docs/lighthouse/) |
-| Enquiries.html | [Lighthouse](/docs/lighthouse/) |
-| Faq page | [Lighthouse](/docs/lighthouse/) |
-| add Faq page | [Lighthouse](/docs/lighthouse/) |
-| edit Faq page | [Lighthouse](/docs/lighthouse/) |
-| delete FAq page | [Lighthouse](/docs/lighthouse/) |
-| see reviews page (1 review )| [Lighthouse](/docs/lighthouse/) |
-| see reviews page ( more than 1 review )| [Lighthouse](/docs/lighthouse/)|
-| no reviews page | [Lighthouse](/docs/lighthouse/) |
-| add reviews page with image | [Lighthouse](/docs/lighthouse/)|
-| add reviews page without image |[Lighthouse](/docs/lighthouse/)
-| add reviews page with featured box ticked |[Lighthouse](/docs/lighthouse/)
-| add reviews page without feature tick |[Lighthouse](/docs/lighthouse/)
-| delete reviews page |[Lighthouse](/docs/lighthouse/) |
-| My Profile page |[Lighthouse](/docs/lighthouse/) |
-| Past order detail | [Lighthouse](/docs/lighthouse/) |
-| Add item to cart with checkout pop up with items in the toast |[Lighthouse](/docs/lighthouse/) |
-| Cart | [Lighthouse](/docs/lighthouse/) |
-| Checkout | [Lighthouse](/docs/lighthouse/)
-| Order confirmation page |[Lighthouse](/docs/lighthouse/)
-| 500 | [Lighthouse](/docs/lighthouse/)
-| 403 |[Lighthouse](/docs/lighthouse/)
-| 404 | [Lighthouse](/docs/lighthouse/)
+[Lighthouse](/docs/lighthouse/)|
+| Testing | Results | Mobile | Desktop|
+|--------|---------|--------|---------|
+| Home page | [mobile](/docs/lighthouse/home-mob-lh.png)| [Lighthouse-desktop](/docs/lighthouse/home-mobile-lh.png) |
+| Login page |[Lighthouse-mobile](/docs/lighthouse/sign-in-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/sign-in-dt-lh.png) |
+| Loggout page |[Lighthouse-mobile](/docs/lighthouse/sign-out-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/sign-out-dt-lh.png) |
+| Register page |[Lighthouse-mobile](/docs/lighthouse/sign-up-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/sign-up-dt-lh.png) |
+| CART.HTML WITH ITEMS |[Lighthouse-mobile](/docs/lighthouse/cart-mob-lh.png) |[Lighthouse-desktop](/docs/lighthouse/cart-dt-lh.png) |
+| CART EMPTY HTML |[Lighthouse-mobile](/docs/lighthouse/cart-empty-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/cart-empty-dt-lh.png) |
+| All Items page |[Lighthouse-mobile](/docs/lighthouse/all-items-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/ad-item-dt-lh.png) |
+| Items-butterflies page |[Lighthouse-mobile](/docs/lighthouse/butterflies-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/butterflies-dt-lh.png) |
+| Items-flora page |[Lighthouse-mobile](/docs/lighthouse/flora-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/flora-dt-lh.png) |
+| Items-fish page |[Lighthouse-mobile](/docs/lighthouse/fish-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/fish-dt-lh.png) |
+| Items detail page |[Lighthouse-mobile](/docs/lighthouse/item-detail-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/item-detail-dt-lh.png) |
+| Store Management page |[Lighthouse-mobile](/docs/lighthouse/ad-item-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/ad-item-dt-lh.png) |
+| Edit Items page |[Lighthouse-mobile](/docs/lighthouse/edi) |
+| Commissions page | [Lighthouse-mobile](/docs/lighthouse/commiss-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/comiss-dt-lh.png) |
+| Commissions detail page |[Lighthouse-mobile](/docs/lighthouse/com-detail-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/com-detail-dt-lh.png) |
+| Contact.html |[Lighthouse-mobile](/docs/lighthouse/contact-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/contact-dt-lh.png) |
+| Enquiries.html | [Lighthouse-mobile](/docs/lighthouse/enquires-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/enquiries-dt-lh.png) |
+| Faq page | [Lighthouse-mobile](/docs/lighthouse/) | [Lighthouse-desktop](/docs/lighthouse/fa) |
+| add Faq page | [Lighthouse-mobile](/docs/lighthouse/add-faq-mob-dt-lh.png) | [Lighthouse-desktop](/docs/lighthouse/add-faq-mob-dt-lh.png) |
+| edit Faq page | [Lighthouse-mobile](/docs/lighthouse/edit-faq-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/edit-faq-dt-lh.png) |
+| see reviews page | [Lighthouse-mobile](/docs/lighthouse/reviews-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/reviews-dt-lh.png) |
+| no reviews page | [Lighthouse-mobile](/docs/lighthouse/no-review-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/no-review-dt-lh.png) |
+| add reviews page | [Lighthouse-mobile](/docs/lighthouse/add-review-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/add-review-dt-lh.png) |
+| My Profile page |[Lighthouse-mobile](/docs/lighthouse/profile-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/profile-dt-lh.png) |
+| Past order detail /order confirmation| [Lighthouse-mobile](/docs/lighthouse/order-conf-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/order-conf-dt-lh.png) |
+| Checkout | [Lighthouse-mobile](/docs/lighthouse)
 
 
 &nbsp;
@@ -228,14 +218,14 @@ Wc3 HTML - All pages pass without error
 | **Number** | **User Story** | **Result** |
 | :-- | :-- | :-- |
 | **ADMIN & Store Management** |  |  |  |  |  |
-| #1 | As an admin, I can add/edit/delete products through an easy-to-use front end admin page so that I can manage the products available. |  | 
-| #2 | As an admin, I can add/delete images of previous past commission pieces so that I can show potential customers the scope of commissions |  | 
-| #3 | As a admin I can view customer orders so that I can full fill the orders or amend if needed |  | |
-| #4 | As a Admin I can manage the reviews and testimonials on the site so that I can remove them if I no longer feel they are still necessary or needed | | 
-| #5 | As an admin I can manage the commissions content so that I can make amendments if needed | |
-| #6 | As a Admin I can view queries sent via contact form so that I can act upon them accordingly | |
+| #1 | As an admin, I can add/edit/delete products through an easy-to-use front end admin page so that I can manage the products available. | PASS | 
+| #2 | As an admin, I can add/delete images of previous past commission pieces so that I can show potential customers the scope of commissions | PASS | 
+| #3 | As a admin I can view customer orders so that I can full fill the orders or amend if needed | PASS |
+| #4 | As a Admin I can manage the reviews on the site so that I can remove them if I no longer feel they are still necessary or needed | PASS | 
+| #5 | As an admin I can manage the commissions content so that I can make amendments if needed | PASS |
+| #6 | As a Admin I can view queries sent via contact form so that I can act upon them accordingly | PASS  |
 | #7 | EPIC ADMIN & Store Management ||
-| Maybe? | As an admin, I can view and customer enquiries on the front-end without having to access the admin panel. | |
+| Maybe? | As an admin, I can view and customer enquiries on the front-end without having to access the admin panel. | PASS |
 | **EPIC Viewing and Navigation** |
 | #8 | As a Site User, I can intuitively navigate around the site so that I can easily find content and info I am looking for | | 
 | #9 | As a Site User, I can view a variety of items on a page so that I can select an item to view. | | 
