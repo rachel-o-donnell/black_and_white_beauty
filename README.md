@@ -1,6 +1,6 @@
 # **BLACK & WHITE BEAUTY**
 
-![amiresponsive mock-ups of Black & White Beauty](./documentation/responsiveness/)
+![amiresponsive mock-ups of Black & White Beauty](./docs/responsive.png)
 
 ### LIVE WEBSITE: **[Link to the Deployed Site](https://black-and-white-beauty.herokuapp.com/)**
 
@@ -9,14 +9,8 @@ __![GitHub contributors](https://img.shields.io/github/contributors/rachel-o-don
 __![GitHub language count](https://img.shields.io/github/languages/count/rachel-o-donnell/black_and_white_beauty?color=blue&style=for-the-badge)__
 __![GitHub top language](https://img.shields.io/github/languages/top/rachel-o-donnell/black_and_white_beauty?color=yellow&style=for-the-badge)__
 
-*** A NOTE ON THE 2nd contributor:
+***A NOTE ON THE 2nd contributor:***
 Neil McEwwn (Code Institute) who had to change my files to adapt to a crossover from Gitpod to CodeAnywhere - I had originally done the change myself and he confirmed I had everything in place and did it correctly but it wasn't working. He redid the process requested a pull request and I accepted the change. In the end I reverted all these changes as CodeAnywhere was rife with issues and I had lost too much time already so went back to Gitpod. 
-
-# Project Overview
-
-Black & White Beauty is a fictitious e-commerce full stack project built using Django, Python, JavaScript and Bootstrap 4. The site is deployed to Heroku, uses Amazon S3 for cloud storage and Stripe for payment processing. Black & White Beauty is a business to consumer online retailer of black and white illustrations.
-
-<br/>
 
 ---
 
@@ -75,6 +69,23 @@ Black & White Beauty is a fictitious e-commerce full stack project built using D
         * [How to Clone](#how-to-clone)
 * [Credits](#credits)
 * [Acknowledgements](#acknowledgements)
+
+
+# Introduction
+
+Black & White Beauty is a B2C e-commerce website for the final project of the Code Institute diploma in Software Engineering.
+
+Black & White Beauty is a fictitious e-commerce full stack project built using Django, Python, JavaScript and Bootstrap 4. The site is deployed to Heroku, uses Amazon S3 for cloud storage and Stripe for payment processing. Black & White Beauty is a business to consumer online retailer of black and white illustrations.
+
+The site provides role based permissions for users to interact with a central dataset. It includes user authentication, email validation and CRUD functionality.
+
+The payment system uses Stripe. Please note that this website is for **educational purposes** only and the payment gateway is not set up to accept real payments. Do not enter any personal credit/debit card details when using the site.
+
+When testing the site, please use the following from Stripe's testing documentation: 
+
+- a Stripe test card number, such as `4242 4242 4242 4242`, or `4000 0582 6000 0005` for UK.
+- a future expiry date, such as 04/24.
+- any three-digit CVC.
 
 ---
 
@@ -179,11 +190,9 @@ editing commit messages
 https://linuxhint.com/remove-committed-file-after-push-in-git/#:~:text=Display%20the%20existing%20content%20of,file%20from%20the%20local%20repository.
 https://stackabuse.com/git-revert-to-a-previous-commit/
 
-10 minute mail
-https://10minutemail.com/
-
-https://iwt.ie/
-
+* [ 10 minute mail ](https://10minutemail.com/)
+* [ Irish Wildlife Trust ](https://iwt.ie/)
+* [ Favicon ](https://realfavicongenerator.net/)
 
 ## **Content**
 
@@ -202,3 +211,7 @@ These other resources were used for research and/or for finding solutions when I
 ---
 
 # **ACKNOWLEDGEMENTS**
+A massive thank you to my cohort team members Eleanor, Ivette and Roz for always being on hand to troubleshoot bugs and issues, and my mentor Richard Wells fr all the advice and support!
+
+
+*Go back to the [top](#table-of-contents)*
