@@ -10,6 +10,7 @@
 ## TABLE OF CONTENTS
 
 * [Validation](#validation)
+* [Responsivness](#responsiveness)
     * [HTML Validation](#html)
     * [CSS Validation](#css)
     * [JavaScript Validation](#javascript)
@@ -27,6 +28,7 @@
 &nbsp; 
 
 # Responsiveness 
+Dev tools were used to ensure responsiveness while in development but the site can be tested here -> [AM I Responsive ](https://ui.dev/amiresponsive?url=%20https://8000-rachelodonn-blackandwhi-39a79qr72yb.ws-eu98.gitpod.io) 
 | Testing | Results |
 |--------|---------|
 | Navbar - goes to burger | PASS |
@@ -82,13 +84,14 @@
 | 403 | PASS | 
 | 404 | PASS | 
 
-
 # Code Validation
 &nbsp;
 
 # HTML
-&nbsp;
-Wc3 HTML - All pages pass without error
+Wc3 HTML: All pages pass without error
+
+
+![Html](./docs/html/Screenshot%202023-05-31%20at%2009.50.27.png)
 | Testing | Results |
 |--------|---------|
 | Home page | PASS |
@@ -131,6 +134,7 @@ Wc3 HTML - All pages pass without error
 
 # CSS 
 Jigsaw Wc3 validation - passes without error
+![CSS](./docs/css/Screenshot%202023-05-31%20at%2011.43.09.png)
 | Testing | Results |
 |--------|---------|
 | Base.css | PASS |
@@ -143,29 +147,33 @@ Jigsaw Wc3 validation - passes without error
 # JAvascript - JShint 
 
 The only two errors came from JAvacript taken from Stripe and Mailchimp. I decided not to alter in case it broke the functionalities of either feature
-| Testing | Results |
-|--------|---------|
-| CART.HTML | PASS |
-| Contact_form.html | PASS |
-| Enquiries.html | PASS |
-| Add_item.html | PASS |
-| Edit_Item.html | PASS |
-| Items.html (1) | PASS |
-| Items- quantity-input.html | PASS |
-| Commissions.html | PASS |
-| countryfield/js profiles | PASS |
-| add_review.html | PASS |
-| Base.html toasts | PASS |
-| allauth email.html | PASS 
-| Checkout/js/stripe_elements.js | Error coming from Stripe |
-| Base.html MAilchimp | Errors - see image |
+[Jshint](./docs/jshint)
+
+
+| Testing | Results | image |
+|--------|---------|---------|
+| CART.HTML | PASS | [cart.html-js](./docs/jshint/cart.html-js.png) |
+| Contact_form.html | PASS | [contact_formjs](./docs/jshint/contact_formjs.png) |
+| Enquiries.html | PASS | [enquiries.htmljs](./docs/jshint/enquiries.htmljs.png) |
+| Add_item.html | PASS | [add_item](./docs/jshint/add_itemjs.png)
+| Edit_Item.html | PASS | [edit_itemjs](./docs/jshint/edit_itemjs.png)|
+| Items.html (1) | PASS | [items.htmljs](./docs/jshint/items.htmljs.png) |
+| Items- quantity-input.html | PASS | [qty-input-scripjs-items](./docs/jshint/qty-input-scripjs-items.png) |
+| Commissions.html | PASS | [commissions.html-js](./docs/jshint/commissions.html-js.png) 
+| countryfield/js profiles | PASS | [countryfield.js-profiles](./docs/jshint/countryfield.js-profiles.png) |
+| add_review.html | PASS | [add_review](./docs/jshint/add-review.html-js.png)
+| Base.html toasts | PASS | [base.html-toast-js](./docs/jshint/base.html-toast-js.png) |
+| allauth email.html | PASS | [allauth-email](./docs/jshint/allauth-email.html-js.png) |
+| Checkout/js/stripe_elements.js | Error coming from Stripe |[Stripe-js](./docs/jshint/Stripe-js.png) [stripe-elements-js](./docs/jshint/stripe-elements-js.png) |
+| Base.html MAilchimp | Errors - see image |[mailchimp-js-errors](./docs/jshint/mailchimp-js-errors.png) |
 
 &nbsp;
 
 # PYTHON
 Pycodestyle used as linter in terminal
 
-Pep8CI - all files pass without error
+Pep8CI - all files pass without error and can be found here
+[python validation images](./docs/python-validation/)
 
 &nbsp;
 
