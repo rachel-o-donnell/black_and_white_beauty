@@ -224,73 +224,70 @@ Wc3 HTML - All pages pass without error
 | #4 | As a Admin I can manage the reviews on the site so that I can remove them if I no longer feel they are still necessary or needed | PASS | 
 | #5 | As an admin I can manage the commissions content so that I can make amendments if needed | PASS |
 | #6 | As a Admin I can view queries sent via contact form so that I can act upon them accordingly | PASS  |
-| #7 | EPIC ADMIN & Store Management ||
-| Maybe? | As an admin, I can view and customer enquiries on the front-end without having to access the admin panel. | PASS |
+| #7 | EPIC ADMIN & Store Management | PASS |
+| - | As an admin, I can view and customer enquiries on the front-end without having to access the admin panel. | PASS |
 | **EPIC Viewing and Navigation** |
-| #8 | As a Site User, I can intuitively navigate around the site so that I can easily find content and info I am looking for | | 
-| #9 | As a Site User, I can view a variety of items on a page so that I can select an item to view. | | 
-| #10 | As a user I can search for items so that I can find specific items quickly | |
-| #11 | As a user I can sort items by category so that I can filter through the items on offer | | 
-| #12 | As a user I can sort items by price so that I can filter through the items on offer  | |
-| #13 | As a user I can browse through all available item so that I can see all my options for buying | | 
-| #14 | As a user I can look at item details so that I can gain greater knowledge about the item.   || 
-| #15 | As a user I can easily see the price of the item so that I can easily decide if an item is in my budget. | |
-| #16 | As a user I can easily see reviews of an item if any so that I can gain insight into what others have thought of their purchase once it was in their hands.  | |
-| #17 | As a user I can see testimonials of the commissions process to gain insight into how it was for others to work and collaborate with the site owner. | | 
-| #18 | As a user I can the amount of a single item is available so that I can see how many are in stock.    ||
-| #19 | EPIC Viewing and Navigation  | |
+| #8 | As a Site User, I can intuitively navigate around the site so that I can easily find content and info I am looking for | PASS | 
+| #9 | As a Site User, I can view a variety of items on a page so that I can select an item to view. | PASS | 
+| #10 | As a user I can search for items so that I can find specific items quickly | PASS |
+| #11 | As a user I can sort items by category so that I can filter through the items on offer | PASS | 
+| #12 | As a user I can sort items by price so that I can filter through the items on offer  | PASS |
+| #13 | As a user I can browse through all available item so that I can see all my options for buying | PASS | 
+| #14 | As a user I can look at item details so that I can gain greater knowledge about the item.  | PASS | 
+| #15 | As a user I can easily see the price of the item so that I can easily decide if an item is in my budget. | PASS |
+| #16 | As a user I can easily see reviews of an item if any so that I can gain insight into what others have thought of their purchase once it was in their hands.  | PASS |
+| #19 | EPIC Viewing and Navigation  | PASS |
 | **EPIC User Account and Profile** |
-| #20 | As a user I can create, read, edit, or delete my account so that I can have a more personalised experience and update my details accordingly   | |
-| #21 | As a user I can login in to my account so that I can view my order history    || 
-| #22 | As a user I can logout of my acc so that I can safely use public computers | | 
-| #23 | As a site user, I can save my personal details in my user profile so that I do not have to fill them out for future orders.  | |
-| #24 | As a site user, I can view my order history so that I can remember what purchases I've made | |
-| #25 | As a site user, I can view my order history so that I can add a review/testimonial  | |
+| #20 | As a user I can create, read, edit my account so that I can have a more personalised experience and update my details accordingly  |  PASS  |
+| #21 | As a user I can login in to my account so that I can view my order history  | PASS |
+| #22 | As a user I can logout of my acc so that I can safely use public computers |  PASS | 
+| #23 | As a site user, I can save my personal details in my user profile so that I do not have to fill them out for future orders.  |  PASS  |
+| #24 | As a site user, I can view my order history so that I can remember what purchases I've made |  PASS |
 | #26 | As a site user, I can recover my password in case I forget it so that I can recover access to my account.  | |
 | #27 | EPIC User Account and Profile | |
 | **EPIC Purchasing** |
-| #28 | As a shopper, I can add a variety of items in different quantities to my shopping bag so that I can purchase them all at once. | |
-| #29 | As a shopper, I can view a sum total of my shopping cart as I am shopping so that I can keep within my budget. | |
-| #30 | As a shopper, I can view the contents of my shopping cart at any time so I can easily make comparisons and adjustments ||
-| #31 | As a shopper, I can adjust the quantity of individual items in my cart so that I can easily make changes before I purchase.  ||
-| #32 | As a shopper, I can see a summary of my shopping cart when I checkout so that I can verify my choices before I commit to purchasing. || 
-| #33 | As a shopper, I can checkout securely so that I can I maintain the level of trust on submitting my card details | |
-| #34 | As a shopper, I can view my order confirmation after checkout so that I know my purchase was successful.  ||
-| #35 | As a shopper, I can receive an email confirmation of my order so that I have a record of my purchase. | |
-| #36 | EPIC Purchasing | |
-| MAYBE |As a shopper, I can checkout as a guest so I don't have to sign up for an account. | | 
+| #28 | As a shopper, I can add a variety of items in different quantities to my shopping bag so that I can purchase them all at once. | PASS |
+| #29 | As a shopper, I can view a sum total of my shopping cart as I am shopping so that I can keep within my budget. | PASS |
+| #30 | As a shopper, I can view the contents of my shopping cart at any time so I can easily make comparisons and adjustments | PASS |
+| #31 | As a shopper, I can adjust the quantity of individual items in my cart so that I can easily make changes before I purchase. | PASS |
+| #32 | As a shopper, I can see a summary of my shopping cart when I checkout so that I can verify my choices before I commit to purchasing. | PASS | 
+| #33 | As a shopper, I can checkout securely so that I can I maintain the level of trust on submitting my card details |  PASS |
+| #34 | As a shopper, I can view my order confirmation after checkout so that I know my purchase was successful. | PASS |
+| #35 | As a shopper, I can receive an email confirmation of my order so that I have a record of my purchase. | PASS |
+| #36 | EPIC Purchasing | PASS |
 | **EPIC User Interaction** | 
-| #37 | As a site user, I can receive confirmation on my interactions in the site so that I can be sure my actions were successful or unsuccessful. | | 
-| #38 | As a site user, I can submit an enquiry form so that I can have my question, complaint or commission query answered. | | 
-| #39 | As a site user, I can add / edit / delete a review in relation to a product I received so that I can give my feedback.  | |
-| #40 | As a site user, I can add / edit / delete a testimonial in relation to a piece I commissioned so that I can give my feedback on the process   | |
-| #41 | As a site user, I can sign up for the website's newsletter so that I can keep up to date with the latest news and collections | | 
-|#42 | EPIC User Interaction | |
-
-
-| **EPIC: FAQ**  | decided to do this as commissions was not too different to products
-
-| #61 As a user I can access frequently asked questions so I can potentially have a query answered without having to make contact
-- #62 As an admin I can add, edit and delete frequently asked questions so customers can have potential queries answered without having to make contact. 
-- #63 EPIC: FAQs
-
+| #37 | As a site user, I can receive confirmation on my interactions in the site so that I can be sure my actions were successful or unsuccessful. | PASS | 
+| #38 | As a site user, I can submit an enquiry form so that I can have my question, complaint or commission query answered. | PASS |
+| #39 | As a site user, I can add a review in relation to a product I received so that I can give my feedback.  |  PASS  |
+| #41 | As a site user, I can sign up for the website's newsletter so that I can keep up to date with the latest news and collections | PASS | 
+|#42 | EPIC User Interaction | PASS |
+| | As a site user I can use the contact form so that I can contact the site owners | PASS |
+| **EPIC: FAQ**  | decided to do this as commissions was not too different to products |
+| #61 | As a user I can access frequently asked questions so I can potentially have a query answered without having to make contact | PASS |
+| #62 | As an admin I can add, edit and delete frequently asked questions so customers can have potential queries answered without having to make contact. | PASS |
+| #63 | EPIC: FAQs | PASS |
  
 #### User stories not yet implemented 
  
 The following user stories were scoped out of the project due to time constraints and labelled as "Won't Have" on the project board on Github. It is intended that these user stories will be implemented at a later date. 
- 
-As a user I can add products to my wishlist so that I can think about them and come back to them at a later date 
 
-FAQ
+| #17 | As a user I can see testimonials of the commissions process to gain insight into how it was for others to work and collaborate with the site owner.
+| #18 | As a user I can the amount of a single item is available so that I can see how many are in stock.   
+| #25 | As a site user, I can view my order history so that I can add a review/testimonial
+| part of original #39 | As a site user, edit / delete a review in relation to a piece I commissioned so that I can give my feedback on the process
+| #40 | As a site user, I can add / edit / delete a testimonial in relation to a piece I commissioned so that I can give my feedback on the process 
 
+# Future Features:
+- As a shopper, I can checkout as a guest so I don't have to sign up for an account. 
 - As a shopper, I can add products to my saved items so that I can go back and view them at a later date. 
 - As a shopper, I can view my saved products so I can find them easily in the one location. 
+- As a shopper, I can checkout as a guest so I don't have to sign up for an account.
+- add a live blog to the site
+- blog: As a site user I can view paginated posts so that I can select which posts to view 
+- blog: As a site user I can view all posts so that I can decide what I may be interested in reading 
+- blog: As a site user I can comment to the blog posts so that I can express my opinion to the post 
 
-blog
-- As a site user I can view paginated posts so that I can select which posts to view 
-- As a site user I can view all posts so that I can decide what I may be interested in reading 
-- As a site user I can comment to the blog posts so that I can express my opinion to the post 
-- As a site user I can use the contact form so that I can contact the site owners
+------
 # Manual Testing
 
 ### Methodology
