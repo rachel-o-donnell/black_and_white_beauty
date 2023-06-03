@@ -88,6 +88,119 @@ When testing the site, please use the following from Stripe's testing documentat
 - any three-digit CVC.
 
 ---
+# UX 
+## STRATEGY
+# UX
+
+## Strategy
+
+### The Problem
+
+Buying affordable art thats perfect for a gallery wall.
+### The Solution
+
+Offering prints is a way to keep the price of art down. Small prints are perfect to fill the gaps between larger pieces and can bring a whole vwall together by having multiple within the same schema.
+### Target Audience
+
+Consumers that love art, wildlife and nature, who appreciate a small Irirsh business and handmade items.
+
+
+*Go back to the [top](#table-of-contents)*
+
+---
+
+## Marketing Strategy
+
+The main goal of the company is to sell small pieces or art or offer services in the form of commissions with a strong focus on charity donations giving 5% of all sales not profits to the Irish WIldlife Trust.
+
+Having a strong brand and a solid, trustworthy and easy to use website creates a good foundation for the company to build its online presence, extending the reach of a small artist in a small town in Ireland.
+
+With the website as an asset and a newsletter email list as a starting point, we can then share the brand on social media or online advertising, continue to evolve the SEO, and build out additional features (such as a blog, educational resources and IWT  campaigns and collaborations ) to help increase traffic to the site. We could run social media competitions and email campaigns, where customers take phots of flora or fauna they see in the wild for it to be added to be drawn and added in the store with the wining person recieving the orginal drawing which are not normally for sale
+
+*Go back to the [top](#table-of-contents)*
+
+## Scope
+
+### User Expectations
+1. As a user I expect the app to be responsive.
+2. As a user I expect a successful transaction.
+3. As a user I expect my data to be secure.
+
+### User Stories
+
+**EPIC ADMIN & Store Management**
+- #1  As an admin, I can add/edit/delete products through an easy-to-use front end admin page so that I can manage the products available.
+- #2  As an admin, I can add/delete images of previous past commission pieces so that I can show potential customers the scope of commissions
+- #3  As a admin I can view customer orders so that I can full fill the orders or amend if needed
+- #4  As a Admin I can manage the reviews on the site so that I can remove them if I no longer feel they are still necessary or needed #5  As an admin I can manage the commissions content so that I can make amendments if needed
+- #6  As a Admin I can view queries sent via contact form so that I can act upon them accordingly
+- #7  EPIC ADMIN & Store Management
+-  As an admin, I can view and customer enquiries on the front-end without having to access the admin panel
+
+**EPIC Viewing and Navigation** 
+- #8  As a Site User, I can intuitively navigate around the site so that I can easily find content and info I am looking for
+- #9  As a Site User, I can view a variety of items on a page so that I can select an item to view.
+- #10  As a user I can search for items so that I can find specific items quickly
+- #11  As a user I can sort items by category so that I can filter through the items on offer
+- #12  As a user I can sort items by price so that I can filter through the items on offer
+- #13  As a user I can browse through all available item so that I can see all my options for buying
+- #14  As a user I can look at item details so that I can gain greater knowledge about the item. 
+- #15  As a user I can easily see the price of the item so that I can easily decide if an item is in my budget
+- #16  As a user I can easily see reviews of an item if any so that I can gain insight into what others have thought of their purchase once it was in their hands.
+
+
+ **EPIC User Account and Profile** 
+- #20 As a user I can create, read, edit my account so that I can have a more personalised experience and update my details accordingly  
+- #21 As a user I can login in to my account so that I can view my order history
+- #22 As a user I can logout of my acc so that I can safely use public computers 
+- #23 As a site user, I can save my personal details in my user profile so that I do not have to fill them out for future orders.  
+- #24 As a site user, I can view my order history so that I can remember what purchases I've made
+- #26 As a site user, I can recover my password in case I forget it so that I can recover access to my acc
+
+**EPIC Purchasing** |
+- #28 As a shopper, I can add a variety of items in different quantities to my shopping bag so that I can purchase them all at once
+- #29 As a shopper, I can view a sum total of my shopping cart as I am shopping so that I can keep within my budget
+- #30 As a shopper, I can view the contents of my shopping cart at any time so I can easily make comparisons and adjustment
+- #31 As a shopper, I can adjust the quantity of individual items in my cart so that I can easily make changes before I purchase
+- #32 As a shopper, I can see a summary of my shopping cart when I checkout so that I can verify my choices before I commit to purchasing.
+- #33 As a shopper, I can checkout securely so that I can I maintain the level of trust on submitting my card details
+- #34 As a shopper, I can view my order confirmation after checkout so that I know my purchase was successful
+- #35 As a shopper, I can receive an email confirmation of my order so that I have a record of my purchase
+
+**EPIC User Interaction** 
+- #37 As a site user, I can receive confirmation on my interactions in the site so that I can be sure my actions were successful or unsuccessful.
+- #38 As a site user, I can submit an enquiry form so that I can have my question, complaint or commission query answered
+- #39 As a site user, I can add a review in relation to a product I received so that I can give my feedback.  
+- #41 As a site user, I can sign up for the website's newsletter so that I can keep up to date with the latest news and collections
+- As a site user I can use the contact form so that I can contact the site owner
+
+**EPIC: FAQ**  
+- #61 As a user I can access frequently asked questions so I can potentially have a query answered without having to make contact | PASS |
+- #62 As an admin I can add, edit and delete frequently asked questions so customers can have potential queries answered without having to make contact
+
+My goal was to get the a basic version of the site fully functioning before adding additional features. A site where a user could create a profile, complete and order with all the confirmations, and that the admin could edit the items. After that I set about working on my custom models and finessing the styling and Additional User stories were created along the way.
+
+
+## Structure
+
+
+I used Lucid app to create a diagram of the models
+
+**Database models**
+
+
+![Database models](docs/database.png)
+
+
+---
+
+## Skeleton
+
+The website uses a well-known and well-experienced web design pattern, to provide a comforting and predictable experience to users. With the logo in the top left, navigation in the middle and important links in the top right. Each page has a large title, except for the product detail page. The header and footer on each of the longer pages matches, allowing users to quickly find their way around. The main page wireframes, with help from Balsamiq, are shown below.
+
+![wireframes](docs/wireframes.png)
+
+
 
 # **Future Development, Iteration and Implementation**
 | **FOR FUTURE IMPLEMENTATION** |   |
