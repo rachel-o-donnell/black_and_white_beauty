@@ -117,8 +117,7 @@ Having a strong brand and a solid, trustworthy and easy to use website creates a
 
 With the website as an asset and a newsletter email list as a starting point, we can then share the brand on social media or online advertising, continue to evolve the SEO, and build out additional features (such as a blog, educational resources and IWT  campaigns and collaborations ) to help increase traffic to the site. We could run social media competitions and email campaigns, where customers take phots of flora or fauna they see in the wild for it to be added to be drawn and added in the store with the wining person recieving the orginal drawing which are not normally for sale
 
-*Go back to the [top](#table-of-contents)*
-
+&nbsp;
 ## Scope
 
 ### User Expectations
@@ -180,7 +179,7 @@ With the website as an asset and a newsletter email list as a starting point, we
 
 My goal was to get the a basic version of the site fully functioning before adding additional features. A site where a user could create a profile, complete and order with all the confirmations, and that the admin could edit the items. After that I set about working on my custom models and finessing the styling and Additional User stories were created along the way.
 
-
+&nbsp;
 ## Structure
 
 
@@ -188,19 +187,91 @@ I used Lucid app to create a diagram of the models
 
 **Database models**
 
-
 ![Database models](docs/database.png)
-
 
 ---
 
 ## Skeleton
 
-The website uses a well-known and well-experienced web design pattern, to provide a comforting and predictable experience to users. With the logo in the top left, navigation in the middle and important links in the top right. Each page has a large title, except for the product detail page. The header and footer on each of the longer pages matches, allowing users to quickly find their way around. The main page wireframes, with help from Balsamiq, are shown below.
+The website uses a well-known and well-experienced web design pattern, to provide a comforting and predictable experience to users.  navigation in the middle and important links in the top right. Each page has a large title, except for the product detail page. The header and footer pages match in color, allowing users to quickly find their way around. The main page wireframes, designed on Balsamiq, were used as a guidline but tweaks in design were made when I could see everything visually on the screen.
 
-![wireframes](docs/wireframes.png)
+[wireframes](docs/wireframes)
+
+&nbsp;
+## Surface
+
+I wanted to create a simple design with colours that are natural yet fresh. 
 
 
+### Colours
+
+#0E1D18 - a deep forest green - dark enough to apear black on screen
+#A4C3B2 - a soft sage green
+#fff5ee - a delicate rose petal pink 
+The red and blue of the edit and delete buttons were originally boostrap but were changed to add more visability and contrast as well as keeping in with the overall look. 
+
+ ![Palette](docs/colors/sage.png)
+ ![Palette](docs/colors/forrest.png)
+ ![Palette](docs/colors/petal.png)
+ ![Palette](docs/colors/edit.png)
+ ![Palette](docs/colors/delete.png)
+
+&nbsp;
+### Fonts
+
+The logo and main font throughout the site uses [Raleway](https://fonts.google.com/specimen/Raleway?preview.text=B&preview.text_type=custom). It's an easy to read font, adding a minimal and modern yet sometimes detailed touch. 
+
+&nbsp;
+### Images
+
+The drawings used in throughout the app are my own. 
+
+&nbsp; 
+
+# Agile
+
+Epics and User Stories were all divided up and added as issues in the issues tab of Github
+User Stories had acceptance criteria/tasks in the form of check boxes. 
+
+![Agile](docs/agile/agile-ac.png)
+
+
+All issues were coverted to a Github Kanban project board found in the Github Projects tab or by clicking [here](https://github.com/users/rachel-o-donnell/projects/11)
+
+Product Backlogs were created using the Milestones feature in Github. 1 main product board was created 1st and each iteration was drawn from this board in order of priority.
+Timeboxing was used by creating Iterations in the Milestones tab of Github with each iteration being one week long.
+Issues were added to each iteration at the start of each week using MosCow prioritisation (with new labels added to each issue) and using the 60% 20% rest method. These issues were also ordered from top priority on the top of the list down.
+
+Issues that were not completed were added back into the main Product Backlog Milestone at the end of each iteration and the board was reprioritised.
+# PROJECT BOARDS AND ITERATIONS
+
+Each Epic and User Story was given a label(s) to visually connect to the theme or epic it belonged to.
+Each Epic and User Story was color coded to have more harmonious connection to the Theme.
+![Agile](docs/agile/agile-admin.png)
+![Agile](docs/agile/agile-purchasing.png)
+![Agile](docs/agile/agile-user-acc.png)
+![Agile](docs/agile/agile-user-interaction.png)
+![Agile](docs/agile/agile-viewing-navigation.png)
+
+## Iteration 1
+![Agile](docs/agile/pb-iteration-1.png)
+## Iteration 2
+![Agile](docs/agile/iteration2.png)
+![Agile](docs/agile/pb-iteration2.png)
+## Iteration 4
+![Agile](docs/agile/pb-it-4.png)
+## Iteration 5
+![Agile](docs/agile/pb-it-5.png)
+## Iteration 6
+![Agile](docs/agile/pb-start-it-6.png)
+## Iteration 7
+![Agile](docs/agile/agile-start-of-it-7.png)
+## Final Iteration 
+![Agile](docs/agile/final-iteration-mid-week.png)
+![Agile](docs/agile/final-it-1.png)
+
+
+&nbsp; 
 
 # **Future Development, Iteration and Implementation**
 | **FOR FUTURE IMPLEMENTATION** |   |
