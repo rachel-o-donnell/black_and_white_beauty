@@ -8,22 +8,20 @@
 
 ---
 ## TABLE OF CONTENTS
-
-* [Validation](#validation)
 * [Responsivness](#responsiveness)
+* [Validation](#validation)
     * [HTML Validation](#html)
     * [CSS Validation](#css)
     * [JavaScript Validation](#javascript)
     * [Python Validation](#python)
     * [Lighthouse Report](#lighthouse)
-        * [Desktop](#desktop)
-        * [Mobile](#mobile)
 * [Testing](#manual-testing)
     * [Testing User Stories](#testing-user-stories)
     * [Full Testing](#full-testing)
 * [Bugs, Errors & Solutions](#bugs-found-during-testing-and-development-phase)
     * [Solved Bugs](#solved-bugs)
-    * [Known Bugs](#known-bugs)# MANUAL TESTING
+    * [Known Bugs](#known-bugs)
+    
 
 &nbsp; 
 
@@ -182,7 +180,7 @@ Wc3 HTML - All pages pass without error
 [Lighthouse](/docs/lighthouse/)|
 | Testing | Results | Mobile | Desktop|
 |--------|---------|--------|---------|
-| Home page | [mobile](/docs/lighthouse/home-mob-lh.png)| [Lighthouse-desktop](/docs/lighthouse/home-mobile-lh.png) |
+| Home page | [mobile](/docs/lighthouse/home-mob-lh.png)| [Lighthouse-desktop](/docs/lighthouse/all-items-dt-lh.png) |
 | Login page |[Lighthouse-mobile](/docs/lighthouse/sign-in-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/sign-in-dt-lh.png) |
 | Loggout page |[Lighthouse-mobile](/docs/lighthouse/sign-out-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/sign-out-dt-lh.png) |
 | Register page |[Lighthouse-mobile](/docs/lighthouse/sign-up-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/sign-up-dt-lh.png) |
@@ -194,7 +192,7 @@ Wc3 HTML - All pages pass without error
 | Items-fish page |[Lighthouse-mobile](/docs/lighthouse/fish-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/fish-dt-lh.png) |
 | Items detail page |[Lighthouse-mobile](/docs/lighthouse/item-detail-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/item-detail-dt-lh.png) |
 | Store Management page |[Lighthouse-mobile](/docs/lighthouse/ad-item-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/ad-item-dt-lh.png) |
-| Edit Items page |[Lighthouse-mobile](/docs/lighthouse/edi) |
+| Edit Items page |[Lighthouse-mobile](/docs/lighthouse/edit-item-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/edit-item-dt-lh.png) |
 | Commissions page | [Lighthouse-mobile](/docs/lighthouse/commiss-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/comiss-dt-lh.png) |
 | Commissions detail page |[Lighthouse-mobile](/docs/lighthouse/com-detail-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/com-detail-dt-lh.png) |
 | Contact.html |[Lighthouse-mobile](/docs/lighthouse/contact-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/contact-dt-lh.png) |
@@ -207,7 +205,7 @@ Wc3 HTML - All pages pass without error
 | add reviews page | [Lighthouse-mobile](/docs/lighthouse/add-review-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/add-review-dt-lh.png) |
 | My Profile page |[Lighthouse-mobile](/docs/lighthouse/profile-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/profile-dt-lh.png) |
 | Past order detail /order confirmation| [Lighthouse-mobile](/docs/lighthouse/order-conf-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/order-conf-dt-lh.png) |
-| Checkout | [Lighthouse-mobile](/docs/lighthouse)
+| Checkout | [Lighthouse-mobile](/docs/lighthouse/checkout-mob-lh.png) | [Lighthouse-desktop](/docs/lighthouse/checkout-dt-lh.png) |
 
 
 &nbsp;
