@@ -26,8 +26,6 @@ Neil McEwwn (Code Institute) who had to change my files to adapt to a crossover 
   - [Skeleton](#skeleton)
   - [Surface](#surface)
 - [Agile](#agile)
-  - [Epics](#epics)
-  - [Sprints](#sprints)
 - [Features](#features)
   - [Header](#header)
   - [Footer](#footer)
@@ -157,7 +155,7 @@ With the website as an asset and a newsletter email list as a starting point, we
 - #26 As a site user, I can recover my password in case I forget it so that I can recover access to my acc
 
 **EPIC Purchasing** |
-- #28 As a shopper, I can add a variety of items in different quantities to my shopping bag so that I can purchase them all at once
+- #28 As a shopper, I can add a variety of items in different quantities to my shopping cart so that I can purchase them all at once
 - #29 As a shopper, I can view a sum total of my shopping cart as I am shopping so that I can keep within my budget
 - #30 As a shopper, I can view the contents of my shopping cart at any time so I can easily make comparisons and adjustment
 - #31 As a shopper, I can adjust the quantity of individual items in my cart so that I can easily make changes before I purchase
@@ -221,6 +219,8 @@ The red and blue of the edit and delete buttons were originally boostrap but wer
 
 The logo and main font throughout the site uses [Raleway](https://fonts.google.com/specimen/Raleway?preview.text=B&preview.text_type=custom). It's an easy to read font, adding a minimal and modern yet sometimes detailed touch. 
 
+ ![Raleway](docs/raleway.png)
+
 &nbsp;
 ### Images
 
@@ -272,6 +272,83 @@ Each Epic and User Story was color coded to have more harmonious connection to t
 
 
 &nbsp; 
+
+# FEATURES
+
+## Header
+Everything that was scheduled to be added to the app has been implemented. With the addition of the Producers app.
+
+## Header
+
+![desktop header ](docs/features/header/header-dt.png)
+![Header screenshot](docs/features/header/header-sm.png)
+
+On opening the site, users will be welcomed by a clean and fresh familiar site layout.
+
+- The header has a free delivery threshold banner, to let users know that they can get free shipping if they place an order over €70.
+- the logo sits in the middle.
+- On larger screens, there is a search form to to the left. this is reduced to the search icon and moved to the right with the other icons on smaller screens.
+- The "Account" button displays a dropdown menu that provides links for "Register" and "Login", allowing users to either register for a new account, or login with an existing one. Once logged in, the links update to "My Profile" and "Logout". If logged in as a superuser, there is additional options "Store Management", "FAQs"s and "Enquiries" link available here.
+- The cart button opens up a mini version of the cart page. If there are no items in the cart, it will show a button to "Continue shopping". If there are items, it will display a summary of these, along with a subtotal, delivery charge and grand total.
+- The main navigation contains the "Home", "Items", and "Commissions", links, helping users to easily navigate to the main parts of the site. 
+- On smaller screens, the main navigation is replaced with a "hamburger" icon on the left side. Clicking on the hamburger button reveals the offcanvas menu, containing the logo, search form and main navigation. Leaving just the  search, "Account" and cart buttons visible for easy access.
+
+
+
+![Admin options](docs/features/header/admin-menu.png)
+![Cart witout item ](docs/features/header/cart-item.png)
+![Cart with item ](docs/features/header/cart-with-item.png)
+![User options ](docs/features/header/user-menu.png)
+&nbsp; 
+
+[ more Header images](docs/features/header/)
+
+&nbsp; 
+
+## Footer
+
+The footer anchors the site by using the same colour as the header
+
+- The 1st section provides social media icons that (would) connect to the company's various social media accounts. These are external links and open in a separate tab for convenience, and to allow the user to return to the site easily.
+- There's a button to subscribe to the newsletter through Mailchimp. If the user has not already subsribed, they will see a success message. If they have already subscribed, they will see a message stating this.
+- Links to the "contact us", "Faqs" and a "Privacy Policy". The latter helps SEO by allowing spiderbots to crawl the site easily, and providing more trust, for both users and search engines.
+- The organisation logos and links of the Irish Wildlife Trust sit on the right. 
+- At the very bottom is the copyright. 
+
+![Footer screenshot](docs/features/footer.png)
+
+
+&nbsp; 
+## Homepage
+
+- The homepage holds a large image of the companies hero image with a short and sweet overview of what the user can find on the site
+-  Hosts a link inviting users to shop the galery taking them to view all the items in the sstore
+
+![Home](docs/features/home/home.png)
+
+&nbsp; 
+
+## Items
+
+- a fully responsive view of all items 
+- each items image is displayed on a card with key information - its name, price and whether its in stock or not and its category
+- clicking on hte image opens up the item detail page
+
+![items](docs/features/items/items.png)
+
+&nbsp; 
+
+## Item Details
+## Commissions
+## Commission Details
+## Cart
+## Checkout
+## Order Confirmation / history
+## User Profiles
+## Store Management
+## Reviews
+## FAQ Management
+## Error Pages
 
 # **Future Development, Iteration and Implementation**
 | **FOR FUTURE IMPLEMENTATION** |   |
