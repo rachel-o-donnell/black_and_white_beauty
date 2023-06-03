@@ -18,7 +18,7 @@
 * [Testing](#manual-testing)
     * [Testing User Stories](#testing-user-stories)
     * [Full Testing](#full-testing)
-* [Bugs, Errors & Solutions](#bugs-found-during-testing-and-development-phase)
+* [Bugs, Errors & Solutions](#bugs)
     * [Solved Bugs](#solved-bugs)
     * [Known Bugs](#known-bugs)
     
@@ -345,7 +345,7 @@ Manual tests were applied as I was building features to ensure all features adde
 | sort by choices | clicking choices orders the view from low to high price or vice versa | clicked | PASS | PASS |
 | Back to top | Clicking brings you to the top of the page | Clicked | PASS | PASS |
 | ADMIN EXTRAS |
-| ACCESS| Can only be accessed by Admin | - | PASS | 
+| ACCESS| Can only be accessed by Admin | - | - | PASS | 
 | Edit | clicking brings you to Edit Items page | clicked |  PASS | PASS |
 | Delete | clicking renders a confirmation/delete pop up | clicked  | PASS | PASS |
 
@@ -357,18 +357,15 @@ Manual tests were applied as I was building features to ensure all features adde
 | extra info displayed | - |  - |  - | PASS|
 | reviews button | clicking renders reviews page | clicked | PASS | PASS |
 | Item in stock | Item in stock, add to bag and qty button displays, dispatch est is next day |  updated item to in stock | - | PASS |
-| Item out of stock | Item out of stock, add to bag and qty button disappear - contact button displayed |  updated item to out of stock | - | PASS |
+| Item out of stock | Item out of stock, add to bag and qty button disappear - contact button displayed |  updated item to out of stock | PASS | PASS |
 | add reviews button | Pressing add review renders the review form | pressed the add review button | PASS | PASS |
 | Quantity button | add and minus buttons work | pressed plus and minus buttons | PASS | PASS |
 | Quantity button disabled | minus button disables when item is at 1 , plus disable when items are at 98 | pressed plus and minus buttons | PASS | PASS |
 |Quantity input negative numbers | cannot add negative numbers - user is prompted to correct their input | Entered -1 into input box | PASS | PASS |
 |Quantity input over 99 items | cannot add more than 99 items to cart - user is prompted to correct their input | Entered 100 into input box | PASS | PASS |
-| Quantity input over 99 items | cannot add more than 99 items to cart by adding in separate transactions - user is prompted by toast to correct their input | Entered 100 into input box | - | FAIL | - Send the message but still adds the items
-|Update button | MISSING  | DOES IT NEED TO BE HERE OR JUST IN THE CART???
-|Delete button | MISSING |  DOES IT NEED TO BE HERE OR JUST IN THE CART???
+| Quantity input over 99 items | cannot add more than 99 items to cart by adding in separate transactions - user is prompted by toast to correct their input | Entered 100 into input box | - | PASS | - Send the message but still adds the items
 | Continue shopping | clicking brings to all items page | clicked button | PASS | PASS |
 | Add to cart | Adds item with quantity to cart | added various quantities of items to cart | PASS | PASS |
-| if item oos |
 | Contact Us | Clicking link opens the contact form page | clicked link |  PASS | PASS |
 | ADMIN EXTRAS |
 | ACCESS| Can only be accessed by Admin | typed items/edit to end of url as normal user | - | PASS |
@@ -432,9 +429,9 @@ Manual tests were applied as I was building features to ensure all features adde
 #### CART
 | Testing | Expected Outcome | Steps | Hover | Results |
 |--------|---------|---------|---------|---------|
-| Cart empty |
+| CART EMPTY |
 | Continue shopping | clicking brings to all items page | clicked button | PASS | PASS |
-| Cart with items |
+| CART WITH ITEMS |
 | Items displayed | - | - | - | PASS | 
 | Quantity button | add and minus buttons work | pressed plus and minus buttons | PASS | PASS |
 | Quantity button disabled | minus button disables when item is at 1 , plus disable when items are at 98 | pressed plus and minus buttons | PASS | PASS |
@@ -442,9 +439,9 @@ Manual tests were applied as I was building features to ensure all features adde
 |Quantity input over 99 items | cannot add more than 99 items to cart - user is prompted by toast to correct their input | Entered 100 into input box | - | PASS |
 | User cannot have over 99 items in cart  | cannot add more than 99 items to cart - user is prompted to correct their input | Entered 50 items in one action then tried to add 50 of the same item in another action | PASS | PASS |
 |Update button | Changing number in input and pressing this updates quantity and toast message appears  | Adjusted amount and pressed update | PASS | PASS |
-| Subtotal calculated | - | PASS | 
+| Subtotal calculated | - | - | - | PASS | 
 | Continue shopping | clicking brings to all items page | clicked button | PASS | PASS |
-| Delivery charges |
+| DELIVERY CHARGES |
 | Delivery threshold met | Delivery charge is 0, free delivery message in blue | Added amount over 70euro | - | PASS | 
 | Delivery threshold unmet | Delivery charge is added, Free delivery prompt message in red | Added amount under 70euro | - | PASS | 
 | Continue shopping | clicking brings to all items page | clicked button | PASS | PASS |
@@ -470,8 +467,8 @@ Manual tests were applied as I was building features to ensure all features adde
 |--------|---------|---------|---------|---------|
 | NEW USER | 
 | Users email and info are automatically input in they have filled out their profile delivery info blank otherwise | Created new user filled out details in profile and form is filled |  IS THIS SUPPOSED TO HAPPEN whEN BOX TICK IS FIXED
-| Relevant field and labels are displayed | - | - |  PASS |
-| Form Validation EMPTY | Form validation will prompt for user action if empty form is submitted |   Try to submit empty form |- | PASS |
+| Relevant field and labels are displayed | - | - | - |  PASS |
+| Form Validation EMPTY | Form validation will prompt for user action if empty form is submitted |   Try to submit empty form | - | PASS |
 | Form Validation Only Required Fields | Form validation will prompt for user action to fill content if only title is filled |  Try to submit only title | - | PASS |
 | Form Validation ALL DETAILS | complete purchase and submit bring you to order Confirmation page with details of order | Fill all details of form and submit  | PASS | PASS |
 | save delivery info box | delivery info displayed in Profile Page if remember box is ticked | Ticked box | PASS | FAIL - DAVES WITH AND WITHOUT TICK |
@@ -496,12 +493,12 @@ Manual tests were applied as I was building features to ensure all features adde
 | Form Validation Only Required Fields | clicking submits review, review renders in correct area |  submit only required fields  | - | PASS |
 | Form Validation With Image | clicking submits review, review renders in correct area with image | Submit form with image | -  | PASS |
 | Form Validation Without Image | clicking submits review, review renders in correct area with stock image of the item | Submit form with image | -  | PASS |
-| Form Validation ALL DETAILS | Fill all details of form | User returned to homepage and post is displayed with all relavant info on home page and all extra details  - | PASS |
+| Form Validation ALL DETAILS | Fill all details of form | User returned to homepage and post is displayed with all relavant info on home page and all extra details | - | PASS |
 | Dropdown menus | dropdown features a list of items or commissions | Clicked button | PASS | PASS |
 | Select Image has prompt| - | - | - | PASS |
 | Select Image Adds filename | - | - | - |  PASS |
 | Featured Button has prompt  | - | - | - |  PASS |
-| Featured tick box | ticking this publishes review to site  otherwise renders in django admin | PASS | PASS | 
+| Featured tick box | ticking this publishes review to site  otherwise renders in django admin | ticked | PASS | PASS | 
 | Submit button | clicking bring submits review, review renders in correct area | clicked | PASS | PASS |
 | Cancel Button | clicking bring back to home page | clicked | PASS | PASS |
 
@@ -562,12 +559,11 @@ Manual tests were applied as I was building features to ensure all features adde
 | ACCESS | Can only be accessed by Admin | - | - | PASS |
 | Display | Relevant field and labels are displayed | - | - | PASS |
 | Form Validation EMPTY | Form validation will prompt for user action if empty form is submitted |   Try to submit empty form | - | PASS |
-| Form Validation Question | Form validation will prompt for user action to fill content if only Question is filled |  Try to submit only Question  ||
-| Form Validation Answer | renders prompt | Try to submit only answer and content | PASS |
-| Form Validation ALL DETAILS | Fill all details of form | appears in faq section | PASS |
+| Form Validation Question | Form validation will prompt for user action to fill content if only Question is filled |  Try to submit only Question  | - | PASS |
+| Form Validation Answer | renders prompt | Try to submit only answer and content | - | PASS |
+| Form Validation ALL DETAILS | Fill all details of form | appears in faq section | - | PASS |
 | Submit button | submites faq and appears in faq | - | - | PASS |
 | Cancel Button | cancels faq admin brough back to home page | - | - | PASS |
-| FAQS |
 | FAQS TOAST MESSAGES |
 | Add Faq | Your Comment was deleted message appears | Added a comment | - | PASS |
 
@@ -583,15 +579,13 @@ Manual tests were applied as I was building features to ensure all features adde
 | Continue shopping | clicking brings to all items page | clicked button | PASS | PASS |
 | ADMIN EXTRAS |
 | ACCESS| Can only be accessed by Admin | - | - | PASS |
-| Edit FAQ page |  - | - | - | PASS |
-| Edit | clicking brings to Edit FAQ page | clicked | - | - | PASS |
-| update FAQ | clicking brings to Delete FAQ page | Updated FAQ |  PASS | PASS |
-|Delete FAQ page |
-| Delete | Delete modal pop up appears | clicked | PASS | PASS |
+| Edit FAQ | clicking brings to Edit FAQ page | clicked | PASS | PASS |
+| Delete FAQ | Delete modal pop up appears | clicked | PASS | PASS |
 | Delete modal | Faq is deleted | clicked | PASS | PASS |
 | FAQS TOAST MESSAGES ||
 | Edit Faq | Your faq was edited message appears | Edited a faq | PASS | PASS |
 | Delete Faq | message appears | deleted a faq | PASS | PASS |
+
 &nbsp;
 
 #### ADD ITEM FORM 
@@ -607,7 +601,7 @@ Manual tests were applied as I was building features to ensure all features adde
 | Select Image has prompt| - | - | - | PASS |
 | Select Image Adds filename |  - | - | PASS| PASS |
 | ADD item button | Adds item to the store | clicked | PASS| PASS |
-| Cancel Button | brings user to all Items page | PASS| PASS |
+| Cancel Button | brings user to all Items page | clicked | PASS| PASS |
 | ITEMS TOAST MESSAGES |
 | ADD Item | Item added message appears | Added an item |  PASS | PASS |
 
@@ -654,4 +648,32 @@ Manual tests were applied as I was building features to ensure all features adde
 &nbsp;
 
 
-Return to [README.md](https://github.com/rachel-o-donnell/blackandwhitebeauty/README.md) 
+
+# BUGS
+
+# SOLVED BUGS/workspace/black_and_white_beauty/items/templates/items
+
+- bugs 1: checkout.css not connecting due to typo in checkout.html {% load extra_css %} -> {% load extracss %}
+- bug 2 stripe js
+ needs to be loaded before other js in base.html [credit](https://stackoverflow.com/questions/43172843/uncaught-referenceerror-stripe-is-not-defined-stripe-error)
+- bug 3 profiles/profile filepath incorrect
+- Fix bug 4 Checkout models regarding profiles
+- bug 5 issue #50 Forgot to import Lower function in views so items were not showing in Category search just in All Items search -imported and called User instead of UserProfile
+
+- Resolve issue #56 Commission not showing in admin - Imported Commissions model and registered new class
+
+- Resolve #58: Bug - NoReverseMatch 'commissions' Changed name and url path of from all_commissions -> commissions
+Found when trying to link up commissions_detail.html
+
+- #64 bug: image file name not showing in forms - missing javascript in contact form
+
+- #65 bug: image file name not showing in form - changes filenames to classes in all forms and ammended javascript
+- BUG #103: Delete review deleteing item - data-target was wrong
+
+# KNOWN BUGS
+
+
+
+
+
+Return to [README.md](https://github.com/rachel-o-donnell/black_and_white_beauty/blob/ac656c08d033754dfb45d44e808d1f864dfb4721/README.md) 
