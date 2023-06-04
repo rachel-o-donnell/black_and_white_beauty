@@ -340,6 +340,15 @@ The footer anchors the site by using the same colour as the header
 
 &nbsp; 
 
+
+## All auth
+
+- the site uses the popular allauth for acc management covering login , loggout, sign-up etc.
+&nbsp; 
+
+![allauth](docs/features/sign-up.png)
+
+&nbsp; 
 ## Items
 
 - a fully responsive view of all items 
@@ -543,6 +552,42 @@ The app has custom error pages for 404, 403 and 500 errors.
 *Go back to the [top](#table-of-contents)*
 &nbsp;
 
+
+# Marketing Strategy Implementation
+
+## Branding
+
+Brand assets help to keep customers engaged on a site. Remaining consistent with the branding, and keeping it friendly and of a high quality, helps customers to trust the brand and are therefore more likely to make a purchase.
+
+The brand is explained in more detail in the [Surface](#surface) section.
+
+## SEO
+
+Most people will find a website via a search engine, so it’s good to cover SEO to make sure the site is accessible by search engines. The site has a robots.txt file to allow search engine spiderbots to crawl the site and allow it to be ranked in search results. It also has a sitemap to help the spiderbots to crawl the site faster and fetch all relevant content. The site has reviews, and privacy policy to build trust and improve search engine rankings as well as links to another relevant trusted website- The Irish Wildlife Trust.  Keywords were place in <h> elements where relevant
+
+## Keywords
+
+Keyword research is an ongoing task that involves checking Google results/tools and using external SEO tools such as SEMrush and Ubersuggest. Keywords are selected by tracking what is trending, keeping an eye on what keywords competitors are using, and selecting a mixture of both long and short tail keywords to use for advertising campaigns and to use within site content.
+
+The meta tags and descriptions have relevant information and keywords and the site is connected to Google Analytics to be able to use Google's helpful keyword finder.
+Evidence of my keyword reasearch can be found here
+[keywords](docs/seo/keywords/keywords-evidence.png)
+[keywords](docs/seo/keywords/)
+
+## Newsletter
+
+Visitors to the site do not need to be customers to sign up to the newsletter. Any user can sign up from the footer of any page on the site, adding their email to a Mailchimp mailing list. This helps the business to share information with potential customers, including sales/offers and increase conversions. Evidence of this working and gathering emails below
+
+[keywords](docs/seo/mailchimp.png)
+
+## Social media
+
+Social media marketing is a great way to become identifiable in a target market. And adds extra links in search engines for the business. For this site, a Facebook business page has been created, carrying over the branding to match the website.
+The facebook link will bring you to the page (if facebook has not deacctivated a dormant acc yet) In reality instagram would be another key social media to strategise for with the use of reels and static images and links to the webiste and shooping features also.
+
+![Facebook page screenshot](docs/seo/facebook.png)
+
+*Go back to the [top](#table-of-contents)*
 
 # **Future Development, Iteration and Implementation**
 | **FOR FUTURE IMPLEMENTATION** |   |
