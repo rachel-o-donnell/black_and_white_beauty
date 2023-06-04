@@ -1,21 +1,27 @@
 # **BLACK & WHITE BEAUTY**
 
 &nbsp;
+
 ![amiresponsive mock-ups of Black & White Beauty](./docs/responsive.png)
+
 &nbsp;
 ### LIVE WEBSITE: **[Link to the Deployed Site](https://black-and-white-beauty.herokuapp.com/)**
+
 &nbsp;
+
 __![GitHub last commit](https://img.shields.io/github/last-commit/rachel-o-donnell/black_and_white_beauty?color=fuschia&style=for-the-badge)__
 __![GitHub contributors](https://img.shields.io/github/contributors/rachel-o-donnell/black_and_white_beauty?color=purple&style=for-the-badge)__
 __![GitHub language count](https://img.shields.io/github/languages/count/rachel-o-donnell/black_and_white_beauty?color=blue&style=for-the-badge)__
 __![GitHub top language](https://img.shields.io/github/languages/top/rachel-o-donnell/black_and_white_beauty?color=yellow&style=for-the-badge)__
+
 &nbsp;
+
 ***A NOTE ON THE 2nd contributor:***
 Neil McEwen (Code Institute) who had to change my files to adapt to a crossover from Gitpod to CodeAnywhere - I had originally done the change myself and he confirmed I had everything in place and did it correctly but it wasn't working. He redid the process requested a pull request and I accepted the change. In the end I reverted all these changes as CodeAnywhere was rife with issues and I had lost too much time already so went back to Gitpod. 
 &nbsp;
 ---
 
-**TABLE OF CONTENTS**
+## Table of Contents
 
 
 - [Introduction](#introduction)
@@ -31,17 +37,19 @@ Neil McEwen (Code Institute) who had to change my files to adapt to a crossover 
   - [Header](#header)
   - [Footer](#footer)
   - [Homepage](#homepage)
-  - [Items](#Items)
+  - [Items](#items)
   - [Item Details](#item-details)
-  - [Commissions](#Commissions)
-  - [Commission Details](#Commission-details)
+  - [Commissions](#commissions)
+  - [Commission Details](#commission-details)
+  - [contact](#contact)
+  - [enquiries](#enquiries)
   - [Cart](#cart)
   - [Checkout](#checkout)
   - [Order Confirmation / history](#order-confirmation--history)
   - [User Profiles](#user-profiles)
-  - [Store Management](#Store-management)
+  - [Store Management](#store-management)
   - [Reviews](#review-management)
-  - [FAQ Management](#FAQ-management)
+  - [FAQs](#faqs)
   - [Error Pages](#error-pages)
 - [Marketing Strategy Implementation](#marketing-strategy-implementation)
   - [Branding](#branding)
@@ -196,6 +204,7 @@ The website uses a well-known and well-experienced web design pattern, to provid
 
 [wireframes](docs/wireframes)
 
+
 &nbsp;
 ## Surface
 
@@ -233,19 +242,20 @@ The drawings used in throughout the app are my own.
 
 Epics and User Stories were all divided up and added as issues in the issues tab of Github
 User Stories had acceptance criteria/tasks in the form of check boxes. 
+&nbsp; 
 
 ![Agile](docs/agile/agile-ac.png)
 
+&nbsp; 
 
 All issues were coverted to a Github Kanban project board found in the Github Projects tab or by clicking [here](https://github.com/users/rachel-o-donnell/projects/11)
-
 Product Backlogs were created using the Milestones feature in Github. 1 main product board was created 1st and each iteration was drawn from this board in order of priority.
 Timeboxing was used by creating Iterations in the Milestones tab of Github with each iteration being one week long.
 Issues were added to each iteration at the start of each week using MosCow prioritisation (with new labels added to each issue) and using the 60% 20% rest method. These issues were also ordered from top priority on the top of the list down.
-
 Issues that were not completed were added back into the main Product Backlog Milestone at the end of each iteration and the board was reprioritised.
-# PROJECT BOARDS AND ITERATIONS
 
+&nbsp; 
+# PROJECT BOARDS AND ITERATIONS
 Each Epic and User Story was given a label(s) to visually connect to the theme or epic it belonged to.
 Each Epic and User Story was color coded to have more harmonious connection to the Theme.
 ![Agile](docs/agile/agile-admin.png)
@@ -270,7 +280,6 @@ Each Epic and User Story was color coded to have more harmonious connection to t
 ## Final Iteration 
 ![Agile](docs/agile/final-iteration-mid-week.png)
 ![Agile](docs/agile/final-it-1.png)
-
 
 &nbsp; 
 
@@ -347,13 +356,14 @@ The footer anchors the site by using the same colour as the header
 - The image is clickable and opens on a new tab so a user can see it enlarged to see more detail
 - ALong with the details on the items page user can now see a description of the item
 - If the item is in stock a delivery date is visable - next working day if out of stock - out of stock is in red and in place of the "add to cart" button is replaced with the contact us button
-- USer can see or add a review of this item
+- User can click buttons to see or add a review of this item
 - a quantity area is displayed to let the user add however many items  they want - (within 1-99 range) plus and minus buttons are disabled when the number is 1 or 99
 - continue shopping button brings the user back to the all items page
 - add to cart add the item to your cart and the amount is displayed on the top right of the screen next to the cart icon.
 - toast messages appear in when an item is added to the cart with a summary of the cart and a note on free delivery - if its met it appears in blue and if not it appears in yellow
 &nbsp;
 
+![item-details](docs/features/items/item-detail-responsive.png)
 ![item-details](docs/features/items/item-detail-user.png)
 ![item-details](docs/features/items/qty-btn-disables.png)
 ![item-details](docs/features/items/qty-btn-greater-1.png)
@@ -363,7 +373,7 @@ The footer anchors the site by using the same colour as the header
 
 ADMIN EXTRA :
 - if user is superuser edit and delete buttons appear. 
-- edit brings admin to the edit item page
+- edit brings admin to the edit item page where the admin can update the details or image of an item
 - delete confirms with admin if they really want to delete the item - a failsafe in case the button was clicked by accident
 &nbsp;
 
@@ -373,26 +383,164 @@ ADMIN EXTRA :
 ![item-details](docs/features/items/modal-mobile.png)
 &nbsp;
 
+## Reviews
+
+- customers are able to leave and see reviews of items in the store. 
+- a clean form appears when add review button is clicked 
+- customers are able to display their own image of their item 
+- If the featured button is ticked the review will be published to the site and if not Admin can access from the django admin panel.
+
+![reviews](docs/features/reviews/add-review.png)
+![reviews](docs/features/reviews/add-review-2.png)
+![reviews](docs/features/reviews/no-reviews.png)
+
+ADMIN EXTRA :
+- admin can delete a review - admin delete button appears
+
+![review-admin-view-with-image](docs/features/reviews/add-review.png)
+
+&nbsp;
+
 ## Commissions
+
+-  Commissions are laid out smilarly to items but these items are not for sale. Here users can see the scope of commission work that the artist has done including the brief that was given. 
+- back to top button
+- contact us button - in case the user wants to contact regarding their own idea
+
+&nbsp;
+
+![commissionand commission-detail-responsive](docs/features/commissions/commissions-responsive.png)
 
 &nbsp;
 ## Commission Details
+- back to commissions brings usr back to commissions page
+- continue-shopping button brings user to all items
 
 &nbsp;
+
+# Contact 
+
+- User can submit a form with query regarding , orders, commissions, returns etc. Once submitted it appears in the admin view- Enquiries
+
+&nbsp;
+![contact-responsive](docs/features/contact.png)
+
+&nbsp;
+# Enquiries 
+- Admin only.
+- queries are numbered ad displayed from oldest to latest in a scrollable table
+- queries are scrollable left to right on smaller screens
+- back to top button 
+
+![enquiries](docs/features/enquiries.png)
+
+&nbsp;
+
 ## Cart
 &nbsp;
+
+- The main cart page is different from the mini pop up mentioned before
+- The user can also see the items in their bag, with their quantity and price.
+- The cart also shows the a subtotal, delivery charge and grand total for the bag.
+- The bag contents moves to the left, with a larger image and more space.
+- The user also is now also able to adjust the quantity if they'd like. The same as the Item Details page, the quantity form has a minimum of 1 and a maximum of 99.
+- There is also the option to  update or remove an item from the cart
+- Lastly, two buttons: "Secure Checkout" for users to go ahead and complete their order. And "Continue Shopping" to return them to the main Products page.
+&nbsp;
+
+![cart](docs/features/cart/cart-large.png)
+![cart-mobile-view](docs/features/cart/update-remove-btns.png)
+
+&nbsp;
 ## Checkout
+
+&nbsp;
+
+The checkout page displays a bag summary on the right side, followed by the same subtotal, delivery cost and grand total that we've seen in the cart already.
+
+- The left side shows holds a from to collecting the user's contact and shipping information.
+- The user's contact and shipping information will be saved to the user's profile to be autofilled should they place another order.
+- At the bottom of the form is the Stripe field for the user's payment information.
+- Lastly, there is a button to "Return to Bag", should the user not be ready to checkout just yet. And a button for "Pay Now", with the payment amount underneath. Clicking on this will process the payment.
+- The form uses Django's form validation and cross site request forgery protection.
+&nbsp;
+
+![stripe](docs/features/checkout/stripe-payment-success.png)
+![stripe](docs/features/checkout/stripe-input.png)
+![checkout](docs/features/checkout/chckout.png)
+
 &nbsp;
 ## Order Confirmation / history
+
 &nbsp;
+
+Once a user has checked out, they'll see an order confirmation page. 
+
+- The page thanks the user for placing their order, and let's them know that they will receive a confirmation via email as well. The email that's sent to the user is sent via Gmail SMTP and contains a summary of the order, along with a confirmation of the address that it will be shipped to.
+- The confirmation page displays all of the order details in a tidy layout, clearly showing the information provided by the user (minus the payment details) and a summary of the order.
+- It also displays the date and time of the order, and a truncated order number. The order number is very long and is included in the order confirmation email and the URL, so not required to be shown in full here.
+- This same page can be visited via the Profile page too, to display historical orders. 
+&nbsp;
+
+![order](docs/features/checkout/order-conf.png)
+&nbsp;
+
 ## User Profiles
+When a user is logged in, they'll have access to the "My Profile" link from the "Account" button's dropdown menu.
+
+- The left side of the page shows the saved information for that user. It's in the format of a form, so the user can make changes and update their profile using the "Update profile" button at the bottom. 
+- The user will receive a message when the profile is updated successfully.
+- The default delivery details are used to autofill the checkout form.
+- The right side of the profile view displays any historical orders. Clicking on the order number of these will show the full order details, as mentioned above.
 &nbsp;
-## Store Management
+
+![order](docs/features/profile.png)
+
 &nbsp;
-## Reviews
+## Store Management 
 &nbsp;
-## FAQ Management
+The store management page is available to superusers only.
+
+- When logged in as a superuser, the "Store Management" link becomes available in the "Account" button's dropdown menu.
+- This page offers a form for the superuser to add products to the store. 
+- This same form is used if a superuser chooses to update a product, either from the Products page or the Product Detail pages. Except the fields will be pre-filled with the information for the product that was selected to be updated. 
+- For updating, the header changes slightly to say "Edit a product" instead of "Add a product". And there is a note in read stating which product the superuser is making changes to.
+
 &nbsp;
+![add-item](docs/features/items/add-item.png)
+![add-item](docs/features/items/add-item2.png)
+
+&nbsp;
+## FAQs 
+
+- users can access the FAQ page in the link in the footer a common and familiar place for the contact and FAQ section to be.
+- users can see the most common questions and are invited to contact if they dont see their question
+- full crud functionality for the Admin 
+- like the item app the admin has edit and delete buttons in each q&a so they can ammend or delete if needed.
+
+&nbsp;
+
+![faq](docs/features/faqs/add-faq.png)
+![faq](docs/features/faqs/admin-faq.png)
+![faq](docs/features/faqs/faq-view-admin.png)
+![faq-respomnsive](docs/features/faqs/%20faq-responsive.png)
+
+&nbsp;
+## Error Pages
+
+The app has custom error pages for 404, 403 and 500 errors.
+
+- A 404 is a "page not found" error, and extremely common. Therefore, it's a great idea to add a custom error page to keep it user-friendly, and to lead users back to the main site.
+- A 403 is an authentication error. This will show if a user attempts to access an area of the site that they're not allowed to see. 
+- A 500 error is a server error and deisplays as the above pages
+
+&nbsp;
+
+![](docs/features/)
+
+*Go back to the [top](#table-of-contents)*
+&nbsp;
+
 ## Error Pages
 &nbsp;
 # **Future Development, Iteration and Implementation**
@@ -513,6 +661,7 @@ The policies were generated from:
 ## **Other Resources**
 These other resources were used for research and/or for finding solutions when I got stuck.
 1. [Stack Overflow](https://stackoverflow.com/)
+
 
 ---
 
