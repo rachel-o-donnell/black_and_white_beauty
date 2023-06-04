@@ -86,10 +86,11 @@ Dev tools were used to ensure responsiveness while in development but the site c
 &nbsp;
 
 # HTML
-Wc3 HTML: All pages pass without error
+Wc3 HTML: All pages pass without error * all pages tested but screenshots are no different so chose to only add one
 
 
 ![Html](./docs/html/Screenshot%202023-05-31%20at%2009.50.27.png)
+
 | Testing | Results |
 |--------|---------|
 | Home page | PASS |
@@ -131,7 +132,9 @@ Wc3 HTML: All pages pass without error
 &nbsp;
 
 # CSS 
-Jigsaw Wc3 validation - passes without error
+Jigsaw Wc3 validation - passes without error * all pages tested but screenshots are no different so chose to only add one
+&nbsp;
+
 ![CSS](./docs/css/Screenshot%202023-05-31%20at%2011.43.09.png)
 | Testing | Results |
 |--------|---------|
@@ -294,9 +297,9 @@ Manual tests were applied as I was building features to ensure all features adde
 
 &nbsp;
 
-### Hover Category Column expectations and steps : button changes color or adds an underline when hovered over and/or curser changes | hovered over Post button 
+### Hover Category Column expectations and steps : button changes color or adds an underline when hovered over and/or curser changes | ACtion taken hovered over |
 
-&nbsp;
+
 
 #### NAVBAR 
 | Testing | Expected Outcome | Steps | Hover | Results |
