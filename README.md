@@ -530,19 +530,20 @@ The store management page is available to superusers only.
 
 The app has custom error pages for 404, 403 and 500 errors.
 
-- A 404 is a "page not found" error, and extremely common. Therefore, it's a great idea to add a custom error page to keep it user-friendly, and to lead users back to the main site.
+- A 404 is a "page not found" error.
 - A 403 is an authentication error. This will show if a user attempts to access an area of the site that they're not allowed to see. 
-- A 500 error is a server error and deisplays as the above pages
+- A 500 error is a server error and displays as the above pages
+- each page tells the user what error is the issue so they can see can keep informed.
 
 &nbsp;
 
-![](docs/features/)
+![error](docs/features/error-404.png)
+&nbsp;
 
 *Go back to the [top](#table-of-contents)*
 &nbsp;
 
-## Error Pages
-&nbsp;
+
 # **Future Development, Iteration and Implementation**
 | **FOR FUTURE IMPLEMENTATION** |   |
 | --- | --- |
