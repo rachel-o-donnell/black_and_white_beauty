@@ -36,6 +36,7 @@ Neil McEwen (Code Institute) who had to change my files to adapt to a crossover 
 - [Features](#features)
   - [Header](#header)
   - [Footer](#footer)
+  - [Allauth](#all-auth)
   - [Homepage](#homepage)
   - [Items](#items)
   - [Item Details](#item-details)
@@ -685,6 +686,8 @@ https://github.com/rachel-o-donnell/the-witchs-cauldron
 
 README structure and deployment steps are from
 https://github.com/JoyZadan/shop-kbeauty
+and a lot of the features descriptions crossed over from the below project so I added/ammended to.
+https://github.com/lucywoodman/the-chocolate-factory
 
 editing commit messages
 https://linuxhint.com/remove-committed-file-after-push-in-git/#:~:text=Display%20the%20existing%20content%20of,file%20from%20the%20local%20repository.
