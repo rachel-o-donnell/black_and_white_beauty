@@ -1,17 +1,18 @@
 # **BLACK & WHITE BEAUTY**
 
+&nbsp;
 ![amiresponsive mock-ups of Black & White Beauty](./docs/responsive.png)
-
+&nbsp;
 ### LIVE WEBSITE: **[Link to the Deployed Site](https://black-and-white-beauty.herokuapp.com/)**
-
+&nbsp;
 __![GitHub last commit](https://img.shields.io/github/last-commit/rachel-o-donnell/black_and_white_beauty?color=fuschia&style=for-the-badge)__
 __![GitHub contributors](https://img.shields.io/github/contributors/rachel-o-donnell/black_and_white_beauty?color=purple&style=for-the-badge)__
 __![GitHub language count](https://img.shields.io/github/languages/count/rachel-o-donnell/black_and_white_beauty?color=blue&style=for-the-badge)__
 __![GitHub top language](https://img.shields.io/github/languages/top/rachel-o-donnell/black_and_white_beauty?color=yellow&style=for-the-badge)__
-
+&nbsp;
 ***A NOTE ON THE 2nd contributor:***
-Neil McEwwn (Code Institute) who had to change my files to adapt to a crossover from Gitpod to CodeAnywhere - I had originally done the change myself and he confirmed I had everything in place and did it correctly but it wasn't working. He redid the process requested a pull request and I accepted the change. In the end I reverted all these changes as CodeAnywhere was rife with issues and I had lost too much time already so went back to Gitpod. 
-
+Neil McEwen (Code Institute) who had to change my files to adapt to a crossover from Gitpod to CodeAnywhere - I had originally done the change myself and he confirmed I had everything in place and did it correctly but it wasn't working. He redid the process requested a pull request and I accepted the change. In the end I reverted all these changes as CodeAnywhere was rife with issues and I had lost too much time already so went back to Gitpod. 
+&nbsp;
 ---
 
 **TABLE OF CONTENTS**
@@ -71,13 +72,13 @@ Neil McEwwn (Code Institute) who had to change my files to adapt to a crossover 
 
 # Introduction
 
-Black & White Beauty is a B2C e-commerce website for the final project of the Code Institute diploma in Software Engineering.
+Black & White Beauty is a B2C e-commerce website for the final project of the Code Institute diploma in Full Stack Software Engineering.
 
 Black & White Beauty is a fictitious e-commerce full stack project built using Django, Python, JavaScript and Bootstrap 4. The site is deployed to Heroku, uses Amazon S3 for cloud storage and Stripe for payment processing. Black & White Beauty is a business to consumer online retailer of black and white illustrations.
 
 The site provides role based permissions for users to interact with a central dataset. It includes user authentication, email validation and CRUD functionality.
 
-The payment system uses Stripe. Please note that this website is for **educational purposes** only and the payment gateway is not set up to accept real payments. Do not enter any personal credit/debit card details when using the site.
+The payment system uses Stripe. Please note that this website is for **educational purposes** only. Do not enter any personal credit/debit card details when using the site.
 
 When testing the site, please use the following from Stripe's testing documentation: 
 
@@ -293,7 +294,7 @@ On opening the site, users will be welcomed by a clean and fresh familiar site l
 - The main navigation contains the "Home", "Items", and "Commissions", links, helping users to easily navigate to the main parts of the site. 
 - On smaller screens, the main navigation is replaced with a "hamburger" icon on the left side. Clicking on the hamburger button reveals the offcanvas menu, containing the logo, search form and main navigation. Leaving just the  search, "Account" and cart buttons visible for easy access.
 
-
+&nbsp;
 
 ![Admin options](docs/features/header/admin-menu.png)
 ![Cart witout item ](docs/features/header/cart-item.png)
@@ -315,6 +316,7 @@ The footer anchors the site by using the same colour as the header
 - The organisation logos and links of the Irish Wildlife Trust sit on the right. 
 - At the very bottom is the copyright. 
 
+&nbsp;
 ![Footer screenshot](docs/features/footer.png)
 
 
@@ -323,6 +325,7 @@ The footer anchors the site by using the same colour as the header
 
 - The homepage holds a large image of the companies hero image with a short and sweet overview of what the user can find on the site
 -  Hosts a link inviting users to shop the galery taking them to view all the items in the sstore
+&nbsp;
 
 ![Home](docs/features/home/home.png)
 
@@ -333,27 +336,69 @@ The footer anchors the site by using the same colour as the header
 - a fully responsive view of all items 
 - each items image is displayed on a card with key information - its name, price and whether its in stock or not and its category
 - clicking on hte image opens up the item detail page
+&nbsp;
 
 ![items](docs/features/items/items.png)
 
 &nbsp; 
 
 ## Item Details
-## Commissions
-## Commission Details
-## Cart
-## Checkout
-## Order Confirmation / history
-## User Profiles
-## Store Management
-## Reviews
-## FAQ Management
-## Error Pages
+- On large screens An image of the item sits on the left and the details sit on the left. On smaller screens they sit vertically with the image leading.
+- The image is clickable and opens on a new tab so a user can see it enlarged to see more detail
+- ALong with the details on the items page user can now see a description of the item
+- If the item is in stock a delivery date is visable - next working day if out of stock - out of stock is in red and in place of the "add to cart" button is replaced with the contact us button
+- USer can see or add a review of this item
+- a quantity area is displayed to let the user add however many items  they want - (within 1-99 range) plus and minus buttons are disabled when the number is 1 or 99
+- continue shopping button brings the user back to the all items page
+- add to cart add the item to your cart and the amount is displayed on the top right of the screen next to the cart icon.
+- toast messages appear in when an item is added to the cart with a summary of the cart and a note on free delivery - if its met it appears in blue and if not it appears in yellow
+&nbsp;
 
+![item-details](docs/features/items/item-detail-user.png)
+![item-details](docs/features/items/qty-btn-disables.png)
+![item-details](docs/features/items/qty-btn-greater-1.png)
+![item-details](docs/features/items/added-item-toast.png)
+![item-details](docs/features/items/free-delivery-toast.png)
+&nbsp;
+
+ADMIN EXTRA :
+- if user is superuser edit and delete buttons appear. 
+- edit brings admin to the edit item page
+- delete confirms with admin if they really want to delete the item - a failsafe in case the button was clicked by accident
+&nbsp;
+
+![item-details](docs/features/items/Item-detail-admin.png)
+![item-details](docs/features/items/edit-item.png)
+![item-details](docs/features/items/edit-item-image.png)
+![item-details](docs/features/items/modal-mobile.png)
+&nbsp;
+
+## Commissions
+
+&nbsp;
+## Commission Details
+
+&nbsp;
+## Cart
+&nbsp;
+## Checkout
+&nbsp;
+## Order Confirmation / history
+&nbsp;
+## User Profiles
+&nbsp;
+## Store Management
+&nbsp;
+## Reviews
+&nbsp;
+## FAQ Management
+&nbsp;
+## Error Pages
+&nbsp;
 # **Future Development, Iteration and Implementation**
 | **FOR FUTURE IMPLEMENTATION** |   |
 | --- | --- |
-
+&nbsp;
 ---
 # **TECHNOLOGIES USED**
 ## **Languages Used**
