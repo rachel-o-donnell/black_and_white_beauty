@@ -12,7 +12,7 @@ class ReviewForm(forms.ModelForm):
 
     image = forms.ImageField(required=False, widget=CustomClearableFileInput)
     featured = forms.BooleanField(
-        label="Click here if you would like your review to be featured",)
+        label="Click here if you would like your review to be featured", required=False)  # noqa
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
