@@ -680,6 +680,9 @@ Found when trying to link up commissions_detail.html
 - #106 review tick box is required- negating the option to have review featured or not - made required = false in form
 # KNOWN BUGS
 
+No neccescarily bugs but styling details I want to implement
+- Dropdown fields in forms to match styling
+- Change clearable image size for items that are A4 (8.3 x 11.7 inches) to height x 100 in custom clearable file
 
 
 Return to [README.md](https://github.com/rachel-o-donnell/black_and_white_beauty/blob/ac656c08d033754dfb45d44e808d1f864dfb4721/README.md) 
