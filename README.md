@@ -556,10 +556,7 @@ The app has custom error pages for 404, 403 and 500 errors.
 
 # Marketing Strategy Implementation
 
-## Branding
-
-Brand assets help to keep customers engaged on a site. Remaining consistent with the branding, and keeping it friendly and of a high quality, helps customers to trust the brand and are therefore more likely to make a purchase.
-
+Black & White Beauty is a B2C e-commerce website.
 The brand is explained in more detail in the [Surface](#surface) section.
 
 ## SEO
@@ -571,9 +568,9 @@ Most people will find a website via a search engine, so it’s good to cover SEO
 Keyword research is an ongoing task that involves checking Google results/tools and using external SEO tools such as SEMrush and Ubersuggest. Keywords are selected by tracking what is trending, keeping an eye on what keywords competitors are using, and selecting a mixture of both long and short tail keywords to use for advertising campaigns and to use within site content.
 
 The meta tags and descriptions have relevant information and keywords and the site is connected to Google Analytics to be able to use Google's helpful keyword finder.
-Evidence of my keyword reasearch can be found here
+Evidence of my keyword reasearch can be found here using [wordtracker](https://www.wordtracker.com/)
 [keywords](docs/seo/keywords/keywords-evidence.png)
-[keywords](docs/seo/keywords/)
+[keywords-search](docs/seo/keywords/)
 
 ## Newsletter
 
@@ -700,7 +697,7 @@ https://stackabuse.com/git-revert-to-a-previous-commit/
 ## **Content**
 
 
-The policies were generated from:
+The policy was generated from:
 * [Privacy Policy Generator ](https://www.privacypolicygenerator.info/download.php?lang=en&token=2YTFAh7Aa8GDO5knKT5gJ2WAr7mS9EG2)
 
 
