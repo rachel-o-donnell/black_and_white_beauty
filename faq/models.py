@@ -7,7 +7,7 @@ class Faq(models.Model):
     """
 
     question = models.CharField(max_length=1000, null=False, blank=False)
-    answer = models.CharField(max_length=1000, null=False, blank=False)
+    answer = models.TextField(max_length=1000, null=False, blank=False)
     date = models.DateField(auto_now=True, editable=False)
 
     class Meta:
