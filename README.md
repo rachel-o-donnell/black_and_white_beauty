@@ -52,6 +52,7 @@ Neil McEwen (Code Institute) who had to change my files to adapt to a crossover 
   - [Reviews](#review-management)
   - [FAQs](#faqs)
   - [Error Pages](#error-pages)
+  - [Future Features](#future-features)
 - [Marketing Strategy Implementation](#marketing-strategy-implementation)
   - [Branding](#branding)
   - [SEO](#seo)
@@ -587,9 +588,17 @@ The facebook link will bring you to the page (if facebook has not deacctivated a
 
 *Go back to the [top](#table-of-contents)*
 
-# **Future Development, Iteration and Implementation**
-| **FOR FUTURE IMPLEMENTATION** |   |
-| --- | --- |
+# Future Features :
+
+- A blog were users can interact with the material - comment save etc
+- Wishlist
+- Reviews on front end for commissions
+- Admin access to orders on front end
+
+
+
+
+
 &nbsp;
 ---
 # **TECHNOLOGIES USED**
