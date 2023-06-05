@@ -677,7 +677,7 @@ Found when trying to link up commissions_detail.html
 - #65 bug: image file name not showing in form - changes filenames to classes in all forms and ammended javascript
 - BUG #103: Delete review deleteing item - data-target was wrong
 - #87 Save delivery info was saving to profile whether or not box was ticked. This was a relly difficult one that I could not find the source even after shutting off all the save areas, printing statements and console logs etc. In the end I ran out of time to solve it completely so changed it to a feature with no option for user but this would be my 1st area to fix after submition.
-
+- #106 review tick box is required- negating the option to have review featured or not - made required = false in form
 # KNOWN BUGS
 
 
