@@ -12,7 +12,6 @@ def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST, request.FILES)
         if form.is_valid():
-            contact = form.save()
             messages.success(
                 request, 'Thank you for contacting us!'
                 ' We will get back to you by email within 24hrs.')

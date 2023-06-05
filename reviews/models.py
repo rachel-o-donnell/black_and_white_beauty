@@ -1,5 +1,5 @@
 from django.db import models
-from items.models import Item, Category
+from items.models import Item
 from commissions.models import Commissions
 from django.contrib.auth.models import User
 

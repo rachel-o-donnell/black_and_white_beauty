@@ -2,8 +2,6 @@ from django import forms
 from .widgets import CustomClearableFileInput
 from .models import Review
 
-from django.contrib.auth.models import User
-
 
 class ReviewForm(forms.ModelForm):
     """ Create form based on Review model """

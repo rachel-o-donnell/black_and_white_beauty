@@ -4,7 +4,6 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import Review
 from .forms import ReviewForm
-from profiles.models import UserProfile
 
 
 def reviews(request, item_id):
@@ -31,7 +30,6 @@ def add_review(request, item_id):
                        'You need to be logged in to add a review.')
         return redirect(reverse('account_login'))
 
-    user = UserProfile.objects.get(user=request.user)
     item = Item.objects.get(id=item_id)
 
     if request.method == "POST":
