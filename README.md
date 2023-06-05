@@ -328,7 +328,7 @@ The footer anchors the site by using the same colour as the header
 - At the very bottom is the copyright. 
 
 &nbsp;
-![Footer screenshot](docs/features/footer.png)
+![Footer screenshot](docs/features/footer/footer.png)
 
 
 &nbsp; 
