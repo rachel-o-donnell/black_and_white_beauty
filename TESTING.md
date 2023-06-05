@@ -175,6 +175,10 @@ Pycodestyle used as linter in terminal
 
 Pep8CI - all files pass without error and can be found here
 [python validation images](./docs/python-validation/)
+Flake8 was also used in the terminal and there are some false positive problems and the e ones that I chose not to change
+[python validation images](./docs/python-validation/flake8.png)
+
+
 
 &nbsp;
 
@@ -469,12 +473,12 @@ Manual tests were applied as I was building features to ensure all features adde
 | Testing | Expected Outcome | Steps | Hover | Results |
 |--------|---------|---------|---------|---------|
 | NEW USER | 
-| Users email and info are automatically input in they have filled out their profile delivery info blank otherwise | Created new user filled out details in profile and form is filled |  IS THIS SUPPOSED TO HAPPEN whEN BOX TICK IS FIXED
+| Users email and info are automatically input in they have filled out their profile delivery info blank otherwise | Created new user filled out details in profile and form is filled |
 | Relevant field and labels are displayed | - | - | - |  PASS |
 | Form Validation EMPTY | Form validation will prompt for user action if empty form is submitted |   Try to submit empty form | - | PASS |
 | Form Validation Only Required Fields | Form validation will prompt for user action to fill content if only title is filled |  Try to submit only title | - | PASS |
 | Form Validation ALL DETAILS | complete purchase and submit bring you to order Confirmation page with details of order | Fill all details of form and submit  | PASS | PASS |
-| save delivery info box | delivery info displayed in Profile Page if remember box is ticked | Ticked box | PASS | FAIL - DAVES WITH AND WITHOUT TICK |
+| save delivery info | delivery info displayed in Profile Page | completed order| PASS | PASS |
 | Confirmation EMAIL | complete purchase and submit Order Confirmation email with details of order | Fill all details of form and submit | - |  PASS |
 | Order goes to order history | Order goes to order history | Completed order went to profile | - |  PASS |
 | Stripe payment | Stripe payment working | Completed order went to Stripe Developer Webhooks | - |  PASS |
@@ -672,10 +676,9 @@ Found when trying to link up commissions_detail.html
 
 - #65 bug: image file name not showing in form - changes filenames to classes in all forms and ammended javascript
 - BUG #103: Delete review deleteing item - data-target was wrong
+- #87 Save delivery info was saving to profile whether or not box was ticked. This was a relly difficult one that I could not find the source even after shutting off all the save areas, printing statements and console logs etc. In the end I ran out of time to solve it completely so changed it to a feature with no option for user but this would be my 1st area to fix after submition.
 
 # KNOWN BUGS
-
-
 
 
 
